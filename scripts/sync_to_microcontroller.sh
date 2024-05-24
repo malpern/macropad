@@ -35,6 +35,7 @@ sync_files() {
     for ((i=1; i<=RETRY_COUNT; i++)); do
         # Sync files to the microcontroller and log output
         rsync -avz --delete \
+        --size-only \
         --exclude='.*' \
         --exclude='watch_and_sync.sh' \
         --exclude='*.log' \
