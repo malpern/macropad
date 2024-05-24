@@ -5,7 +5,14 @@ from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string
 import supervisor
-from custom-keycodes import ARCH, EVERNOTE, CALANDER, ZOOM, DOWNLOADS, MESSAGES, WHATSAPP, FIGMA, CHATGPT, TECHMEME, TWITTER, YOUTUBE
+import json
+
+with open('custom-keycodes.json', 'r') as f:
+    custom_keycodes = json.load(f)
+
+# Dynamically create variables for each keycode
+for kc in custom_keycodes:
+    globals()[kc['display']] = eval(kc['code'])
 
 keyboard = KMKKeyboard()
 modtap = ModTap()
@@ -60,3 +67,4 @@ keyboard.keymap = [
 # keymap
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
+
