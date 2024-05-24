@@ -304,3 +304,136 @@ deleting scripts/._watch_and_sync.sh
 deleting scripts/._sync_to_microcontroller.sh
 deleting scripts/._logfile.log
 ./
+main.py
+.git/
+.git/hooks/
+.git/info/
+.git/logs/
+.git/logs/refs/
+.git/logs/refs/heads/
+.git/logs/refs/remotes/
+.git/logs/refs/remotes/origin/
+.git/objects/
+.git/objects/51/
+.git/objects/53/
+.git/objects/84/
+.git/objects/info/
+.git/objects/pack/
+.git/refs/
+.git/refs/heads/
+.git/refs/remotes/
+.git/refs/remotes/origin/
+.git/refs/tags/
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 6312 bytes  received 850 bytes  15.97 bytes/sec
+total size is 390478  speedup is 54.52
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5366 bytes  received 542 bytes  251.40 bytes/sec
+total size is 275439  speedup is 46.62
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 4780 bytes  received 526 bytes  365.93 bytes/sec
+total size is 275804  speedup is 51.98
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5435 bytes  received 542 bytes  291.56 bytes/sec
+total size is 276243  speedup is 46.22
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 4832 bytes  received 526 bytes  306.17 bytes/sec
+total size is 276608  speedup is 51.63
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
