@@ -7,12 +7,12 @@ from kmk.handlers.sequences import send_string
 import supervisor
 import json
 
+# Load custom keycodes into a dictionary
+ck = {}
 with open('custom-keycodes.json', 'r') as f:
-    custom_keycodes = json.load(f)
-
-# Dynamically create variables for each keycode
-for kc in custom_keycodes:
-    globals()[kc['display']] = eval(kc['code'])
+    custom_keycodes_list = json.load(f)
+    for kc in custom_keycodes_list:
+        ck[kc['display']] = kc['code']
 
 keyboard = KMKKeyboard()
 modtap = ModTap()
@@ -54,8 +54,9 @@ keyboard.modules = [layers_ext, modtap]
 # 1
 # encodercount
 # keymap
+# Example keymap using custom keycodes
 keyboard.keymap = [
-    [ARCH, EVERNOTE, CALANDER, ZOOM, DOWNLOADS, MESSAGES, WHATSAPP, FIGMA, CHATGPT, TECHMEME, TWITTER, YOUTUBE, KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
+    [ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['ZOOM'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['CHATGPT'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'], KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
     [KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5, KC.KP_6, KC.KP_MINUS, KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
