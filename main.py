@@ -62,6 +62,3 @@ keyboard.keymap = [
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
     keyboard.extensions.append(StringyKeymaps())
-```
-</rewritten_file><|eot_id|>
-
