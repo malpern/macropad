@@ -106,7 +106,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "YouTube"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LCMD(KC.C))",
     "display": "CURSOR",
@@ -117,4 +117,5 @@
     "Description": "Cursor"
   }
 ]
+
 
