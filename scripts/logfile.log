@@ -1,0 +1,306 @@
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+deleting sync_to_microcontroller.sh
+deleting ._main.py
+deleting ._lib
+deleting ._layout.json
+deleting ._kmk
+deleting ._kb.py
+deleting ._custom-keycodes.json
+deleting ._boot_out.txt
+deleting ._boot.py
+deleting ._.git
+deleting ._.DS_Store
+deleting ._.
+deleting .git/._refs
+deleting .git/._packed-refs
+deleting .git/._objects
+deleting .git/._logs
+deleting .git/._info
+deleting .git/._index
+deleting .git/._hooks
+deleting .git/._description
+deleting .git/._config
+deleting .git/._HEAD
+deleting .git/._COMMIT_EDITMSG
+deleting .git/hooks/._update.sample
+deleting .git/hooks/._push-to-checkout.sample
+deleting .git/hooks/._prepare-commit-msg.sample
+deleting .git/hooks/._pre-receive.sample
+deleting .git/hooks/._pre-rebase.sample
+deleting .git/hooks/._pre-push.sample
+deleting .git/hooks/._pre-merge-commit.sample
+deleting .git/hooks/._pre-commit.sample
+deleting .git/hooks/._pre-applypatch.sample
+deleting .git/hooks/._post-update.sample
+deleting .git/hooks/._fsmonitor-watchman.sample
+deleting .git/hooks/._commit-msg.sample
+deleting .git/hooks/._applypatch-msg.sample
+deleting .git/info/._exclude
+deleting .git/logs/._refs
+deleting .git/logs/._HEAD
+deleting .git/logs/refs/._remotes
+deleting .git/logs/refs/._heads
+deleting .git/logs/refs/heads/._main
+deleting .git/logs/refs/remotes/._origin
+deleting .git/logs/refs/remotes/origin/._main
+deleting .git/logs/refs/remotes/origin/._HEAD
+deleting .git/objects/._pack
+deleting .git/objects/._info
+deleting .git/objects/._84
+deleting .git/objects/._53
+deleting .git/objects/._51
+deleting .git/objects/51/._c01a4f5d4b60946470fb34443ee1f0a90e101f
+deleting .git/objects/53/._59583108549412b1bc4b6de3b257166d5f61e8
+deleting .git/objects/84/._2afb65b982ef1213e7aa7d470ecfbbde911ed2
+deleting .git/objects/pack/._pack-7ec73ee7e1a4aed3c6ba3da41deaf626cfd1e295.pack
+deleting .git/objects/pack/._pack-7ec73ee7e1a4aed3c6ba3da41deaf626cfd1e295.idx
+deleting .git/refs/._tags
+deleting .git/refs/._remotes
+deleting .git/refs/._heads
+deleting .git/refs/heads/._main
+deleting .git/refs/remotes/._origin
+deleting .git/refs/remotes/origin/._main
+deleting .git/refs/remotes/origin/._HEAD
+deleting kmk/._utils.py
+deleting kmk/._types.py
+deleting kmk/._transports
+deleting kmk/._scanners
+deleting kmk/._quickpin
+deleting kmk/._modules
+deleting kmk/._kmktime.py
+deleting kmk/._kmk_keyboard.py
+deleting kmk/._keys.py
+deleting kmk/._key_validators.py
+deleting kmk/._hid.py
+deleting kmk/._handlers
+deleting kmk/._extensions
+deleting kmk/._consts.py
+deleting kmk/.___init__.py
+deleting kmk/._.DS_Store
+deleting kmk/extensions/._stringy_keymaps.py
+deleting kmk/extensions/._statusled.py
+deleting kmk/extensions/._rgb.py
+deleting kmk/extensions/._peg_rgb_matrix.py
+deleting kmk/extensions/._peg_oled_display.py
+deleting kmk/extensions/._media_keys.py
+deleting kmk/extensions/._lock_status.py
+deleting kmk/extensions/._led.py
+deleting kmk/extensions/._keymap_extras
+deleting kmk/extensions/._international.py
+deleting kmk/extensions/.___init__.py
+deleting kmk/extensions/keymap_extras/._keymap_jp.py
+deleting kmk/handlers/._stock.py
+deleting kmk/handlers/._sequences.py
+deleting kmk/handlers/.___init__.py
+deleting kmk/modules/._tapdance.py
+deleting kmk/modules/._string_substitution.py
+deleting kmk/modules/._sticky_mod.py
+deleting kmk/modules/._split.py
+deleting kmk/modules/._serialace.py
+deleting kmk/modules/._rapidfire.py
+deleting kmk/modules/._power.py
+deleting kmk/modules/._potentiometer.py
+deleting kmk/modules/._pimoroni_trackball.py
+deleting kmk/modules/._oneshot.py
+deleting kmk/modules/._mouse_keys.py
+deleting kmk/modules/._modtap.py
+deleting kmk/modules/._midi.py
+deleting kmk/modules/._layers.py
+deleting kmk/modules/._holdtap.py
+deleting kmk/modules/._encoder.py
+deleting kmk/modules/._easypoint.py
+deleting kmk/modules/._dynamic_sequences.py
+deleting kmk/modules/._combos.py
+deleting kmk/modules/._cg_swap.py
+deleting kmk/modules/._capsword.py
+deleting kmk/modules/._adns9800.py
+deleting kmk/modules/.___init__.py
+deleting kmk/quickpin/._pro_micro
+deleting kmk/quickpin/pro_micro/._sparkfun_promicro_rp2040.py
+deleting kmk/quickpin/pro_micro/._nice_nano.py
+deleting kmk/quickpin/pro_micro/._kb2040.py
+deleting kmk/quickpin/pro_micro/._boardsource_blok.py
+deleting kmk/quickpin/pro_micro/._avr_promicro.py
+deleting kmk/scanners/._keypad.py
+deleting kmk/scanners/._encoder.py
+deleting kmk/scanners/._digitalio.py
+deleting kmk/scanners/.___init__.py
+deleting kmk/transports/._pio_uart.py
+deleting kmk/transports/.___init__.py
+deleting lib/._neopixel.mpy
+./
+.gitignore
+main.py
+.git/
+.git/hooks/
+.git/info/
+.git/logs/
+.git/logs/refs/
+.git/logs/refs/heads/
+.git/logs/refs/remotes/
+.git/logs/refs/remotes/origin/
+.git/objects/
+.git/objects/51/
+.git/objects/53/
+.git/objects/84/
+.git/objects/info/
+.git/objects/pack/
+.git/refs/
+.git/refs/heads/
+.git/refs/remotes/
+.git/refs/remotes/origin/
+.git/refs/tags/
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+scripts/watch_and_sync.sh
+
+sent 6942 bytes  received 898 bytes  16.70 bytes/sec
+total size is 385271  speedup is 49.14
+Sync successful.
+building file list ... done
+deleting ._scripts
+deleting ._main.py
+deleting ._lib
+deleting ._layout.json
+deleting ._kmk
+deleting ._kb.py
+deleting ._custom-keycodes.json
+deleting ._boot_out.txt
+deleting ._boot.py
+deleting ._.gitignore
+deleting ._.git
+deleting ._.DS_Store
+deleting ._.
+deleting .git/._refs
+deleting .git/._packed-refs
+deleting .git/._objects
+deleting .git/._logs
+deleting .git/._info
+deleting .git/._index
+deleting .git/._hooks
+deleting .git/._description
+deleting .git/._config
+deleting .git/._HEAD
+deleting .git/._COMMIT_EDITMSG
+deleting .git/hooks/._update.sample
+deleting .git/hooks/._push-to-checkout.sample
+deleting .git/hooks/._prepare-commit-msg.sample
+deleting .git/hooks/._pre-receive.sample
+deleting .git/hooks/._pre-rebase.sample
+deleting .git/hooks/._pre-push.sample
+deleting .git/hooks/._pre-merge-commit.sample
+deleting .git/hooks/._pre-commit.sample
+deleting .git/hooks/._pre-applypatch.sample
+deleting .git/hooks/._post-update.sample
+deleting .git/hooks/._fsmonitor-watchman.sample
+deleting .git/hooks/._commit-msg.sample
+deleting .git/hooks/._applypatch-msg.sample
+deleting .git/info/._exclude
+deleting .git/logs/._refs
+deleting .git/logs/._HEAD
+deleting .git/logs/refs/._remotes
+deleting .git/logs/refs/._heads
+deleting .git/logs/refs/heads/._main
+deleting .git/logs/refs/remotes/._origin
+deleting .git/logs/refs/remotes/origin/._main
+deleting .git/logs/refs/remotes/origin/._HEAD
+deleting .git/objects/._pack
+deleting .git/objects/._info
+deleting .git/objects/._84
+deleting .git/objects/._53
+deleting .git/objects/._51
+deleting .git/objects/51/._c01a4f5d4b60946470fb34443ee1f0a90e101f
+deleting .git/objects/53/._59583108549412b1bc4b6de3b257166d5f61e8
+deleting .git/objects/84/._2afb65b982ef1213e7aa7d470ecfbbde911ed2
+deleting .git/objects/pack/._pack-7ec73ee7e1a4aed3c6ba3da41deaf626cfd1e295.pack
+deleting .git/objects/pack/._pack-7ec73ee7e1a4aed3c6ba3da41deaf626cfd1e295.idx
+deleting .git/refs/._tags
+deleting .git/refs/._remotes
+deleting .git/refs/._heads
+deleting .git/refs/heads/._main
+deleting .git/refs/remotes/._origin
+deleting .git/refs/remotes/origin/._main
+deleting .git/refs/remotes/origin/._HEAD
+deleting kmk/._utils.py
+deleting kmk/._types.py
+deleting kmk/._transports
+deleting kmk/._scanners
+deleting kmk/._quickpin
+deleting kmk/._modules
+deleting kmk/._kmktime.py
+deleting kmk/._kmk_keyboard.py
+deleting kmk/._keys.py
+deleting kmk/._key_validators.py
+deleting kmk/._hid.py
+deleting kmk/._handlers
+deleting kmk/._extensions
+deleting kmk/._consts.py
+deleting kmk/.___init__.py
+deleting kmk/._.DS_Store
+deleting kmk/extensions/._stringy_keymaps.py
+deleting kmk/extensions/._statusled.py
+deleting kmk/extensions/._rgb.py
+deleting kmk/extensions/._peg_rgb_matrix.py
+deleting kmk/extensions/._peg_oled_display.py
+deleting kmk/extensions/._media_keys.py
+deleting kmk/extensions/._lock_status.py
+deleting kmk/extensions/._led.py
+deleting kmk/extensions/._keymap_extras
+deleting kmk/extensions/._international.py
+deleting kmk/extensions/.___init__.py
+deleting kmk/extensions/keymap_extras/._keymap_jp.py
+deleting kmk/handlers/._stock.py
+deleting kmk/handlers/._sequences.py
+deleting kmk/handlers/.___init__.py
+deleting kmk/modules/._tapdance.py
+deleting kmk/modules/._string_substitution.py
+deleting kmk/modules/._sticky_mod.py
+deleting kmk/modules/._split.py
+deleting kmk/modules/._serialace.py
+deleting kmk/modules/._rapidfire.py
+deleting kmk/modules/._power.py
+deleting kmk/modules/._potentiometer.py
+deleting kmk/modules/._pimoroni_trackball.py
+deleting kmk/modules/._oneshot.py
+deleting kmk/modules/._mouse_keys.py
+deleting kmk/modules/._modtap.py
+deleting kmk/modules/._midi.py
+deleting kmk/modules/._layers.py
+deleting kmk/modules/._holdtap.py
+deleting kmk/modules/._encoder.py
+deleting kmk/modules/._easypoint.py
+deleting kmk/modules/._dynamic_sequences.py
+deleting kmk/modules/._combos.py
+deleting kmk/modules/._cg_swap.py
+deleting kmk/modules/._capsword.py
+deleting kmk/modules/._adns9800.py
+deleting kmk/modules/.___init__.py
+deleting kmk/quickpin/._pro_micro
+deleting kmk/quickpin/pro_micro/._sparkfun_promicro_rp2040.py
+deleting kmk/quickpin/pro_micro/._nice_nano.py
+deleting kmk/quickpin/pro_micro/._kb2040.py
+deleting kmk/quickpin/pro_micro/._boardsource_blok.py
+deleting kmk/quickpin/pro_micro/._avr_promicro.py
+deleting kmk/scanners/._keypad.py
+deleting kmk/scanners/._encoder.py
+deleting kmk/scanners/._digitalio.py
+deleting kmk/scanners/.___init__.py
+deleting kmk/transports/._pio_uart.py
+deleting kmk/transports/.___init__.py
+deleting lib/._neopixel.mpy
+deleting scripts/._watch_and_sync.sh
+deleting scripts/._sync_to_microcontroller.sh
+deleting scripts/._logfile.log
+./
