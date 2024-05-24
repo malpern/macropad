@@ -2,7 +2,7 @@
 
 MAC_PATH="/Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP"
 MICROCONTROLLER_PATH="/Volumes/MACROPAD"
-LOG_FILE="${MAC_PATH}/script/logfile.log"
+LOG_FILE="${MAC_PATH}/scripts/logfile.log"
 
 # Print status update
 echo "Starting sync from $MAC_PATH to $MICROCONTROLLER_PATH..." | tee -a "$LOG_FILE"
