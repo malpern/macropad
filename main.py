@@ -4,6 +4,7 @@ from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string
+from kmk.extensions.stringy_keymaps import StringyKeymaps
 import supervisor
 import json
 
@@ -68,4 +69,5 @@ keyboard.keymap = [
 # keymap
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
+    keyboard.extensions.append(StringyKeymaps())
 
