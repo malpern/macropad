@@ -50,7 +50,7 @@ keyboard.extensions.append(encoder_handler)
 keyboard.modules = [layers_ext, modtap]
 
 keyboard.keymap = [
-    [KC.AUDIO_MUTE, KC.RGB_TOG, ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['ZOOM'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['CHATGPT'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'], KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
+    [KC.AUDIO_MUTE, KC.RGB_TOG, ck['CHATGPT'], ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'], KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
     [KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5, KC.KP_6, KC.KP_MINUS, KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],

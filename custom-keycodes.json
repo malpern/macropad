@@ -107,5 +107,14 @@
     "subNumber": 0,
     "Description": "YouTube"
   }
+  {
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))",
+    "display": "CURSOR",
+    "keybinding": "Control + Option + Command + C",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Cursor"
+  }
 ]
 
