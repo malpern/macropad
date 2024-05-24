@@ -437,3 +437,290 @@ lib/
 scripts/
 scripts/logfile.log
 scripts/sync_to_microcontroller.sh
+
+sent 5480 bytes  received 542 bytes  325.51 bytes/sec
+total size is 277047  speedup is 46.01
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 4880 bytes  received 526 bytes  372.83 bytes/sec
+total size is 277412  speedup is 51.32
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5524 bytes  received 542 bytes  228.91 bytes/sec
+total size is 277851  speedup is 45.80
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 4922 bytes  received 526 bytes  294.49 bytes/sec
+total size is 278216  speedup is 51.07
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5568 bytes  received 542 bytes  298.05 bytes/sec
+total size is 278655  speedup is 45.61
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 4964 bytes  received 526 bytes  244.00 bytes/sec
+total size is 279020  speedup is 50.82
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5612 bytes  received 542 bytes  273.51 bytes/sec
+total size is 279459  speedup is 45.41
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 5008 bytes  received 526 bytes  283.79 bytes/sec
+total size is 279824  speedup is 50.56
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5655 bytes  received 542 bytes  263.70 bytes/sec
+total size is 280263  speedup is 45.23
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 5056 bytes  received 526 bytes  272.29 bytes/sec
+total size is 280628  speedup is 50.27
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5703 bytes  received 542 bytes  290.47 bytes/sec
+total size is 281067  speedup is 45.01
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 5099 bytes  received 526 bytes  340.91 bytes/sec
+total size is 281432  speedup is 50.03
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5745 bytes  received 542 bytes  267.53 bytes/sec
+total size is 281871  speedup is 44.83
+Sync successful.
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+
+sent 5143 bytes  received 526 bytes  343.58 bytes/sec
+total size is 282236  speedup is 49.79
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
+main.py
+kmk/
+kmk/extensions/
+kmk/extensions/keymap_extras/
+kmk/handlers/
+kmk/modules/
+kmk/quickpin/
+kmk/quickpin/pro_micro/
+kmk/scanners/
+kmk/transports/
+lib/
+scripts/
+scripts/logfile.log
+scripts/sync_to_microcontroller.sh
+
+sent 5789 bytes  received 542 bytes  248.27 bytes/sec
+total size is 282675  speedup is 44.65
+Sync successful.
+Starting sync from /Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP to /Volumes/MACROPAD...
+building file list ... done
+./
