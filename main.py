@@ -52,7 +52,7 @@ keyboard.modules = [layers_ext, modtap]
 keyboard.keymap = [
     # Layer 0
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.AUDIO_MUTE, KC.RGB_TOG, ck['ARCH'], ck['EVERNOTE'],
         # Row 2
         ck['CALANDER'], ck['CHATGPT'], ck['CURSOR'], ck['DOWNLOADS'],
@@ -63,7 +63,7 @@ keyboard.keymap = [
     ],
     # Layer 1
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8,
         # Row 2
         KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5,
@@ -74,7 +74,7 @@ keyboard.keymap = [
     ],
     # Layer 2
     [
-        # Row 1
+       # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
@@ -85,7 +85,7 @@ keyboard.keymap = [
     ],
     # Layer 3
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
@@ -96,7 +96,7 @@ keyboard.keymap = [
     ],
     # Layer 4
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
@@ -107,7 +107,7 @@ keyboard.keymap = [
     ],
     # Layer 5
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
@@ -118,7 +118,7 @@ keyboard.keymap = [
     ],
     # Layer 6
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
@@ -129,7 +129,7 @@ keyboard.keymap = [
     ],
     # Layer 7
     [
-        # Row 1
+        # Row 1 First two are the push button of the encoder. Then top two buttons in the first row from the top.
         KC.NO, KC.NO, KC.NO, KC.NO,
         # Row 2
         KC.NO, KC.NO, KC.NO, KC.NO,
