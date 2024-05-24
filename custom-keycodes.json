@@ -1,128 +1,113 @@
 [
   {
-    "code": "simple_key_sequence([KC.LCMD(KC.LSFT(KC.BSPC))])",
-    "display": "CLR",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.A))])",
+    "display": "ARCH",
+    "keybinding": "Control + Option + Command + A",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Clear Browser Data (Chrome macOS)"
+    "Description": "Arch"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.BSPC))])",
-    "display": "CLR",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.E))])",
+    "display": "EVERNOTE",
+    "keybinding": "Control + Option + Command + E",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Clear Browser Data (Chrome Windows)"
+    "Description": "Evernote"
   },
   {
-    "code": "simple_key_sequence([KC.LCMD(KC.LALT(KC.I))])",
-    "display": "DEV",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.C))])",
+    "display": "CALANDER",
+    "keybinding": "Control + Option + Command + C",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Open Dev Tools (Chrome macOS)"
+    "Description": "Calander"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.I))])",
-    "display": "DEV",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Z))])",
+    "display": "ZOOM",
+    "keybinding": "Control + Option + Command + Z",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Open Dev Tools (Chrome Windows)"
+    "Description": "Zoom"
   },
   {
-    "code": "simple_key_sequence([KC.LCMD(KC.LALT(KC.J))])",
-    "display": "CSL",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.D))])",
+    "display": "DOWNLOADS",
+    "keybinding": "Control + Option + Command + D",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Open Console (Chrome macOS)"
+    "Description": "Downloads"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.J))])",
-    "display": "CSL",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.M))])",
+    "display": "MESSAGES",
+    "keybinding": "Control + Option + Command + M",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Open Console (Chrome Windows)"
+    "Description": "Messages"
   },
   {
-    "code": "simple_key_sequence([KC.LCMD(KC.LSFT(KC.R))])",
-    "display": "RLD",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.W))])",
+    "display": "WHATSAPP",
+    "keybinding": "Control + Option + Command + W",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Hard Reload (Chrome macOS)"
+    "Description": "Whatsapp"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.R))])",
-    "display": "RLD",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.F))])",
+    "display": "FIGMA",
+    "keybinding": "Control + Option + Command + F",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Hard Reload (Chrome Windows)"
+    "Description": "Figma"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LCMD(KC.Q)), KC.MACRO_SLEEP_MS(400), KC.ESCAPE])",
-    "display": "LOCK",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.G))])",
+    "display": "CHATGPT",
+    "keybinding": "Control + Option + Command + G",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Lock Screen (macOS)"
+    "Description": "ChatGPT"
   },
   {
-    "code": "simple_key_sequence([KC.LWIN(KC.L)])",
-    "display": "LOCK",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.T))])",
+    "display": "TECHMEME",
+    "keybinding": "Control + Shift + T",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Lock Screen (Windows)"
+    "Description": "Techmeme"
   },
   {
-    "code": "send_string('git status')",
-    "display": "G ST",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.T))])",
+    "display": "TWITTER",
+    "keybinding": "Control + Option + Command + T",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "git status"
+    "Description": "Twitter"
   },
   {
-    "code": "simple_key_sequence([send_string('git commit -m \"\"'), KC.LEFT])",
-    "display": "G CM",
-    "keybinding": "",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Y))])",
+    "display": "YOUTUBE",
+    "keybinding": "Control + Option + Command + Y",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "git commit -m \"\" (Send String)"
-  },
-  {
-    "code": "send_string('git fetch origin')",
-    "display": "G FT",
-    "keybinding": "",
-    "canHaveSub": false,
-    "canHaveSubNumber": false,
-    "subNumber": 0,
-    "Description": "git fetch origin (Send String)"
-  },
-  {
-    "code": "send_string('git add .')",
-    "display": "G AD",
-    "keybinding": "",
-    "canHaveSub": false,
-    "canHaveSubNumber": false,
-    "subNumber": 0,
-    "Description": "git add . (Send String)"
+    "Description": "YouTube"
   }
+]
+```
+</rewritten_file><|eot_id|>
 ]
