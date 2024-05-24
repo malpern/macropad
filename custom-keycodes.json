@@ -1,12 +1,12 @@
 [
   {
-    "code": "simple_key_sequence([KC.LCTL(KC.LALT(KC.LCMD(KC.A))])",
+    "code": "simple_key_sequence([KC.LCMD(KC.LSFT(KC.BSPC))])",
     "display": "CLR",
     "keybinding": "",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Launch Arch"
+    "Description": "Clear Browser Data (Chrome macOS)"
   },
   {
     "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.BSPC))])",
