@@ -79,7 +79,7 @@ keyboard.keymap = [
         # Row 1
         ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['CHATGPT'],
         # Row 2
-        ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'],
+        ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], TD_LYRS,
         # Row 3
         ck['FIGMA'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'],
         # Encoder turn options
