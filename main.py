@@ -10,6 +10,7 @@ from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string, simple_key_sequence
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
+from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
 from midi import Midi
 
@@ -57,6 +58,9 @@ keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
 keyboard.extensions.append(midi_ext)
 keyboard.modules = [layers_ext, modtap]
+
+_______ = KC.TRNS
+xxxxxxx = KC.NO
 
 # LAYER SWITCHING TAP DANCE
 TD_LYRS = KC.TD(LOCK, KC.MO(1), xxxxxxx, KC.TO(2))
