@@ -23,10 +23,11 @@ else:
     row.switch_to_output(value=True)
 
 if not row.value:
-    storage.disable_usb_drive()
+    # storage.disable_usb_drive()
     # Equivalent to usb_cdc.enable(console=False, data=False)
-    usb_cdc.disable()
+    # usb_cdc.disable()
     usb_hid.enable(boot_device=1)
 
 row.deinit()
 col.deinit()
+
