@@ -28,6 +28,7 @@ sync_files() {
         rsync -avz --delete \
         --exclude='.*' \
         --exclude='watch_and_sync.sh' \
+        --exclude='*.log' \
         "$MAC_PATH/" "$MICROCONTROLLER_PATH/" | tee -a "$LOG_FILE"
         if [ $? -eq 0 ]; then
             echo "Sync successful." | tee -a "$LOG_FILE"
