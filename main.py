@@ -50,14 +50,94 @@ keyboard.extensions.append(encoder_handler)
 keyboard.modules = [layers_ext, modtap]
 
 keyboard.keymap = [
-    [KC.AUDIO_MUTE, KC.RGB_TOG, ck['CHATGPT'], ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'], KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
-    [KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5, KC.KP_6, KC.KP_MINUS, KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
-    [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO]
+    # Layer 0
+    [
+        # Row 1
+        KC.AUDIO_MUTE, KC.RGB_TOG, ck['ARCH'], ck['EVERNOTE'],
+        # Row 2
+        ck['CALANDER'], ck['CHATGPT'], ck['CURSOR'], ck['DOWNLOADS'],
+        # Row 3
+        ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['TECHMEME'],
+        # Row 4
+        ck['TWITTER'], ck['YOUTUBE'], KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
+    ],
+    # Layer 1
+    [
+        # Row 1
+        KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8,
+        # Row 2
+        KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5,
+        # Row 3
+        KC.KP_6, KC.KP_MINUS, KC.KP_1, KC.KP_2,
+        # Row 4
+        KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
+    ],
+    # Layer 2
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ],
+    # Layer 3
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ],
+    # Layer 4
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ],
+    # Layer 5
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ],
+    # Layer 6
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ],
+    # Layer 7
+    [
+        # Row 1
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 2
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 3
+        KC.NO, KC.NO, KC.NO, KC.NO,
+        # Row 4
+        KC.NO, KC.NO, KC.NO, KC.NO
+    ]
 ]
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
