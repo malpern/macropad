@@ -108,9 +108,9 @@
     "Description": "YouTube"
   }
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))",
+    "code": "KC.LCTRL(KC.LCMD(KC.C))",
     "display": "CURSOR",
-    "keybinding": "Control + Option + Command + C",
+    "keybinding": "Control + Command + C",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
