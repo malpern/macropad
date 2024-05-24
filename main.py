@@ -1,11 +1,18 @@
+print("Starting")
+
+import supervisor
+import json
+import microcontroller
+
 from kb import KMKKeyboard
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
-from kmk.handlers.sequences import send_string
-import supervisor
-import json
+from kmk.handlers.sequences import send_string, simple_key_sequence
+from kmk.extensions.media_keys import MediaKeys
+from kmk.modules.encoder import EncoderHandler
+from kmk.extensions.RGB import RGB
 
 # Load custom keycodes into a dictionary
 ck = {}
@@ -14,18 +21,15 @@ with open('custom-keycodes.json', 'r') as f:
     for kc in custom_keycodes_list:
         ck[kc['display']] = eval(kc['code'])  # Use eval to convert string to executable code
 
+# Initialize keyboard and modules
 keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
 keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
 keyboard.debug_enabled = True
-from kmk.extensions.media_keys import MediaKeys
-from kmk.handlers.sequences import simple_key_sequence
-from kmk.modules.encoder import EncoderHandler
-from kmk.extensions.RGB import RGB
-import microcontroller
 
+# Initialize RGB
 rgb = RGB(
     pixel_pin=keyboard.rgb_pixel_pin, 
     num_pixels=keyboard.rgb_num_pixel, 
@@ -39,16 +43,19 @@ def on_move_do(state):
         rgb.increase_hue()
     microcontroller.nvm[0] = rgb.hue
 
+# Initialize encoder handler
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
+encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),),]
 
-encoder_handler.map =   [ ((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),), ]
+# Append extensions and modules
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
 keyboard.modules = [layers_ext, modtap]
 
+# Define keymap
 keyboard.keymap = [
     # Layer 0
     [
@@ -158,4 +165,3 @@ keyboard.keymap = [
 
 if __name__ == '__main__':
     keyboard.go(hid_type=HIDModes.USB)
-    keyboard.extensions.append(StringyKeymaps())
