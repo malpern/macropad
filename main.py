@@ -1,5 +1,3 @@
-print("Starting")
-
 import supervisor
 import json
 import microcontroller
@@ -13,6 +11,8 @@ from kmk.handlers.sequences import send_string, simple_key_sequence
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
+from midi import Midi
+
 
 # Load custom keycodes into a dictionary
 ck = {}
@@ -29,12 +29,14 @@ keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
 keyboard.debug_enabled = True
 
-# Initialize RGB
+#Extensions
 rgb = RGB(
     pixel_pin=keyboard.rgb_pixel_pin, 
     num_pixels=keyboard.rgb_num_pixel, 
     hue_default=microcontroller.nvm[0]
 )
+midi_ext = Midi()
+
 
 def on_move_do(state):
     if state is not None and state['direction'] == -1:
@@ -53,7 +55,16 @@ encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),),]
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
+keyboard.extensions.append(midi_ext)
 keyboard.modules = [layers_ext, modtap]
+
+# LAYER SWITCHING TAP DANCE
+TD_LYRS = KC.TD(LOCK, KC.MO(1), xxxxxxx, KC.TO(2))
+MIDI_OUT = KC.TD(KC.MIDI(70), xxxxxxx, xxxxxxx, KC.TO(0))
+
+# array of default MIDI notes
+midi_notes = [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]
+
 
 # Define keymap
 keyboard.keymap = [
@@ -97,17 +108,11 @@ keyboard.keymap = [
         KC.NO, KC.NO
     ],
     # Layer 3
+        # MIDI
     [
-        # Encoder press buttons
-        KC.NO, KC.NO,
-        # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
-        # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
-        # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
-        # Encoder turn options
-        KC.NO, KC.NO
+        KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       MIDI_OUT,
+        KC.MIDI(67),    KC.MIDI(66),      KC.MIDI(65),       KC.MIDI(64),
+        KC.MIDI(60),    KC.MIDI(61),      KC.MIDI(62),       KC.MIDI(63),
     ],
     # Layer 4
     [
