@@ -3,9 +3,18 @@
 MAC_PATH="/Users/malpern/Documents/Programming/MacroPad/zz-MACROPAD-DESKTOP"
 MICROCONTROLLER_PATH="/Volumes/MACROPAD"
 LOG_FILE="${MAC_PATH}/scripts/logfile.log"
+LOGGING_ENABLED=false  # Set logging to off by default
 
 # Print status update
-echo "Starting sync from $MAC_PATH to $MICROCONTROLLER_PATH..." | tee -a "$LOG_FILE"
+log() {
+    if [ "$LOGGING_ENABLED" = true ]; then
+        echo "$1" | tee -a "$LOG_FILE"
+    else
+        echo "$1"
+    fi
+}
+
+log "Starting sync from $MAC_PATH to $MICROCONTROLLER_PATH..."
 
 # Function to perform rsync with retries
 sync_files() {
@@ -14,12 +23,12 @@ sync_files() {
 
     # Check if paths exist
     if [ ! -d "$MAC_PATH" ]; then
-        echo "Source path $MAC_PATH does not exist." | tee -a "$LOG_FILE"
+        log "Source path $MAC_PATH does not exist."
         return 1
     fi
 
     if [ ! -d "$MICROCONTROLLER_PATH" ]; then
-        echo "Destination path $MICROCONTROLLER_PATH does not exist." | tee -a "$LOG_FILE"
+        log "Destination path $MICROCONTROLLER_PATH does not exist."
         return 1
     fi
 
@@ -31,17 +40,16 @@ sync_files() {
         --exclude='*.log' \
         "$MAC_PATH/" "$MICROCONTROLLER_PATH/" | tee -a "$LOG_FILE"
         if [ $? -eq 0 ]; then
-            echo "Sync successful." | tee -a "$LOG_FILE"
+            log "Sync successful."
             return 0
         fi
-        echo "Sync failed. Attempt $i of $RETRY_COUNT. Retrying in $RETRY_DELAY seconds..." | tee -a "$LOG_FILE"
+        log "Sync failed. Attempt $i of $RETRY_COUNT. Retrying in $RETRY_DELAY seconds..."
         sleep $RETRY_DELAY
     done
 
-    echo "Sync failed after $RETRY_COUNT attempts." | tee -a "$LOG_FILE"
+    log "Sync failed after $RETRY_COUNT attempts."
     return 1
 }
 
 # Perform the sync
-sync_files
 sync_files
