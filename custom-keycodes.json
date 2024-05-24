@@ -1,6 +1,6 @@
 [
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.A))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.A)))",
     "display": "ARCH",
     "keybinding": "Control + Option + Command + A",
     "canHaveSub": false,
@@ -9,7 +9,7 @@
     "Description": "Arch"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.E))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.E)))",
     "display": "EVERNOTE",
     "keybinding": "Control + Option + Command + E",
     "canHaveSub": false,
@@ -18,7 +18,7 @@
     "Description": "Evernote"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.C))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))",
     "display": "CALANDER",
     "keybinding": "Control + Option + Command + C",
     "canHaveSub": false,
@@ -27,7 +27,7 @@
     "Description": "Calander"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Z))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.Z)))",
     "display": "ZOOM",
     "keybinding": "Control + Option + Command + Z",
     "canHaveSub": false,
@@ -36,7 +36,7 @@
     "Description": "Zoom"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.D))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.D)))",
     "display": "DOWNLOADS",
     "keybinding": "Control + Option + Command + D",
     "canHaveSub": false,
@@ -45,7 +45,7 @@
     "Description": "Downloads"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.M))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.M)))",
     "display": "MESSAGES",
     "keybinding": "Control + Option + Command + M",
     "canHaveSub": false,
@@ -54,7 +54,7 @@
     "Description": "Messages"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.W))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.W)))",
     "display": "WHATSAPP",
     "keybinding": "Control + Option + Command + W",
     "canHaveSub": false,
@@ -63,7 +63,7 @@
     "Description": "Whatsapp"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.F))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.F)))",
     "display": "FIGMA",
     "keybinding": "Control + Option + Command + F",
     "canHaveSub": false,
@@ -72,7 +72,7 @@
     "Description": "Figma"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.G))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.G)))",
     "display": "CHATGPT",
     "keybinding": "Control + Option + Command + G",
     "canHaveSub": false,
@@ -81,7 +81,7 @@
     "Description": "ChatGPT"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.T))])",
+    "code": "KC.LCTRL(KC.LSFT(KC.T))",
     "display": "TECHMEME",
     "keybinding": "Control + Shift + T",
     "canHaveSub": false,
@@ -90,7 +90,7 @@
     "Description": "Techmeme"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.T))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.T)))",
     "display": "TWITTER",
     "keybinding": "Control + Option + Command + T",
     "canHaveSub": false,
@@ -99,7 +99,7 @@
     "Description": "Twitter"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Y))])",
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.Y)))",
     "display": "YOUTUBE",
     "keybinding": "Control + Option + Command + Y",
     "canHaveSub": false,
@@ -108,6 +108,4 @@
     "Description": "YouTube"
   }
 ]
-```
-</rewritten_file><|eot_id|>
-]
+

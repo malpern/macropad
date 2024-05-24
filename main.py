@@ -4,7 +4,6 @@ from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import send_string
-from kmk.extensions.stringy_keymaps import StringyKeymaps
 import supervisor
 import json
 
@@ -13,14 +12,13 @@ ck = {}
 with open('custom-keycodes.json', 'r') as f:
     custom_keycodes_list = json.load(f)
     for kc in custom_keycodes_list:
-        ck[kc['display']] = kc['code']
+        ck[kc['display']] = eval(kc['code'])  # Use eval to convert string to executable code
 
 keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
 keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
-# codeblock
 keyboard.debug_enabled = True
 from kmk.extensions.media_keys import MediaKeys
 from kmk.handlers.sequences import simple_key_sequence
@@ -49,13 +47,8 @@ encoder_handler.map =   [ ((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),), ]
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
-# codeblock
 keyboard.modules = [layers_ext, modtap]
-# encodercount
-# 1
-# encodercount
-# keymap
-# Example keymap using custom keycodes
+
 keyboard.keymap = [
     [ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['ZOOM'], ck['DOWNLOADS'], ck['MESSAGES'], ck['WHATSAPP'], ck['FIGMA'], ck['CHATGPT'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'], KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
     [KC.AUDIO_MUTE, KC.RGB_TOG, KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK, KC.KP_4, KC.KP_5, KC.KP_6, KC.KP_MINUS, KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS, KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP],
@@ -66,8 +59,9 @@ keyboard.keymap = [
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO],
     [KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO]
 ]
-# keymap
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
     keyboard.extensions.append(StringyKeymaps())
+```
+</rewritten_file><|eot_id|>
 
