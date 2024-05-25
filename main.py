@@ -70,11 +70,20 @@ keyboard.keymap = [
         # Encoder press buttons
         KC.AUDIO_MUTE, KC.RGB_TOG,
         # Row 1
-        ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['CHATGPT'],
+        ck['ARCH'],
+        KC.TD(ck['EVERNOTE'], ck['GOOGLE_DOCS'], ck['IAWRITTER']),
+        ck['CALANDER'],
+        ck['CHATGPT'],
         # Row 2
-        ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], ck['CHATGPT'],
+        ck['CURSOR'],
+        ck['DOWNLOADS'],
+        ck['MESSAGES'],
+        ck['CHATGPT'],
         # Row 3
-        ck['FIGMA'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'],
+        ck['FIGMA'],
+        ck['TECHMEME'],
+        ck['TWITTER'],
+        ck['YOUTUBE'],
         # Encoder turn options
         KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
     ],
