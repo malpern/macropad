@@ -62,13 +62,6 @@ keyboard.modules = [layers_ext, modtap]
 _______ = KC.TRNS
 xxxxxxx = KC.NO
 
-# LAYER SWITCHING TAP DANCE
-TD_LYRS = KC.TD(LOCK, KC.MO(1), xxxxxxx, KC.TO(2))
-MIDI_OUT = KC.TD(KC.MIDI(70), xxxxxxx, xxxxxxx, KC.TO(0))
-
-# array of default MIDI notes
-midi_notes = [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]
-
 
 # Define keymap
 keyboard.keymap = [
@@ -79,7 +72,7 @@ keyboard.keymap = [
         # Row 1
         ck['ARCH'], ck['EVERNOTE'], ck['CALANDER'], ck['CHATGPT'],
         # Row 2
-        ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], TD_LYRS,
+        ck['CURSOR'], ck['DOWNLOADS'], ck['MESSAGES'], ck['CHATGPT'],
         # Row 3
         ck['FIGMA'], ck['TECHMEME'], ck['TWITTER'], ck['YOUTUBE'],
         # Encoder turn options
@@ -98,6 +91,7 @@ keyboard.keymap = [
         # Encoder turn options
         KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
     ],
+
     # Layer 2
     [
         # Encoder press buttons
