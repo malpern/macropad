@@ -27,7 +27,7 @@ layers_ext = Layers()
 tapdance = TapDance()
 
 
-tapdance.tap_time = 300  # was org 750
+tapdance.tap_time = 400  # was org 750
 keyboard.debug_enabled = False
 
 
@@ -71,7 +71,7 @@ keyboard.keymap = [
         KC.AUDIO_MUTE, KC.RGB_TOG,
         # Row 1
         ck['ARCH'],
-        KC.TD(ck['EVERNOTE'], ck['GOOGLE_DOCS'], ck['IAWRITTER']),
+        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS'],),
         KC.TD(ck['CALANDER'], ck['GOOGLE_CALANDER']),
         ck['CHATGPT'],
         # Row 2
