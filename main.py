@@ -62,7 +62,6 @@ _______ = KC.TRNS
 xxxxxxx = KC.NO
 
 def flash_red():
-    print("flash_red function called")  # Debug print
     # Save the current color
     current_hue = rgb.hue
     current_sat = rgb.sat
@@ -80,7 +79,7 @@ def flash_red():
 # Define a flag to track key press state
 key_pressed = False
 
-def before_matrix_scan(sandbox):
+def before_matrix_scan():
     global key_pressed
     if keyboard.keys_pressed and not key_pressed:
         key_pressed = True
@@ -113,8 +112,6 @@ keyboard.keymap = [
         ck['YOUTUBE'],
         # Encoder turn options
         KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP,
-        # Add the flash red key
-        simple_key_sequence(flash_red)
     ],
     # Layer 1
     [
