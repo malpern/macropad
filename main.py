@@ -27,12 +27,10 @@ modtap = ModTap()
 layers_ext = Layers()
 tapdance = TapDance()
 
-
 tapdance.tap_time = 400  # was org 750
 keyboard.debug_enabled = False
 
-
-#Extensions
+# Extensions
 rgb = RGB(
     pixel_pin=keyboard.rgb_pixel_pin, 
     num_pixels=keyboard.rgb_num_pixel, 
@@ -64,6 +62,7 @@ _______ = KC.TRNS
 xxxxxxx = KC.NO
 
 def flash_red():
+    print("flash_red function called")  # Debug print
     # Save the current color
     current_hue = rgb.hue
     current_sat = rgb.sat
@@ -77,6 +76,19 @@ def flash_red():
 
     # Revert to the previous color
     rgb.set_hsv_fill(current_hue, current_sat, current_val)
+
+# Define a flag to track key press state
+key_pressed = False
+
+def before_matrix_scan(sandbox):
+    global key_pressed
+    if keyboard.keys_pressed and not key_pressed:
+        key_pressed = True
+        flash_red()
+    elif not keyboard.keys_pressed:
+        key_pressed = False
+
+keyboard.before_matrix_scan = before_matrix_scan
 
 # Define keymap
 keyboard.keymap = [
