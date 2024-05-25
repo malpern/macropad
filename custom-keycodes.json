@@ -116,6 +116,24 @@
     "subNumber": 0,
     "Description": "Cursor"
   }
+  {
+    "code": "KC.LALT(KC.LSFT(KC.D))",
+    "display": "GOOGLE_DOCS",
+    "keybinding": "Option + Shift + D",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Google Docs"
+  }
+  {
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.I)))",
+    "display": "IAWRITTER",
+    "keybinding": "Control + Option + Command + I",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "IA Writer"
+  }
 ]
 
 
