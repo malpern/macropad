@@ -1,6 +1,7 @@
 import supervisor
 import json
 import microcontroller
+import time
 
 from kb import KMKKeyboard
 from kmk.keys import KC
@@ -62,6 +63,20 @@ keyboard.modules.append(tapdance)
 _______ = KC.TRNS
 xxxxxxx = KC.NO
 
+def flash_red():
+    # Save the current color
+    current_hue = rgb.hue
+    current_sat = rgb.sat
+    current_val = rgb.val
+
+    # Set LEDs to red
+    rgb.set_hsv_fill(0, 255, 255)  # Red color in HSV
+
+    # Wait for a brief moment
+    time.sleep(0.5)  # 0.5 seconds
+
+    # Revert to the previous color
+    rgb.set_hsv_fill(current_hue, current_sat, current_val)
 
 # Define keymap
 keyboard.keymap = [
@@ -85,7 +100,9 @@ keyboard.keymap = [
         ck['TWITTER'],
         ck['YOUTUBE'],
         # Encoder turn options
-        KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
+        KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP,
+        # Add the flash red key
+        simple_key_sequence(flash_red)
     ],
     # Layer 1
     [
