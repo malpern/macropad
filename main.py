@@ -95,74 +95,74 @@ keyboard.keymap = [
     # Layer 2
     [
         # Encoder press buttons
-        KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx,
         # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Encoder turn options
-        KC.NO, KC.NO
+        xxxxxxx, xxxxxxx
     ],
     # Layer 3
         # MIDI
     [
-        KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       KC.NO,
+        KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       xxxxxxx,
         KC.MIDI(67),    KC.MIDI(66),      KC.MIDI(65),       KC.MIDI(64),
         KC.MIDI(60),    KC.MIDI(61),      KC.MIDI(62),       KC.MIDI(63),
     ],
     # Layer 4
     [
         # Encoder press buttons
-        KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx,
         # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Encoder turn options
-        KC.NO, KC.NO
+        xxxxxxx, xxxxxxx
     ],
     # Layer 5
     [
         # Encoder press buttons
-        KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx,
         # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Encoder turn options
-        KC.NO, KC.NO
+        xxxxxxx, xxxxxxx
     ],
     # Layer 6
     [
         # Encoder press buttons
-        KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx,
         # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Encoder turn options
-        KC.NO, KC.NO
+        xxxxxxx, xxxxxxx
     ],
     # Layer 7
     [
         # Encoder press buttons
-        KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx,
         # Row 1
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 2
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Row 3
-        KC.NO, KC.NO, KC.NO, KC.NO,
+        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
         # Encoder turn options
-        KC.NO, KC.NO
+        xxxxxxx, xxxxxxx
     ]
 ]
 
