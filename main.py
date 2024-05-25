@@ -27,7 +27,7 @@ layers_ext = Layers()
 tapdance = TapDance()
 
 
-tapdance.tap_time = 750
+tapdance.tap_time = 550
 keyboard.debug_enabled = True
 
 
