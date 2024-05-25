@@ -55,7 +55,6 @@ encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),),]
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
-keyboard.extensions.append(midi_ext)
 keyboard.modules.append(layers_ext)
 keyboard.modules.append(modtap)
 keyboard.modules.append(tapdance)
