@@ -134,6 +134,16 @@
     "subNumber": 0,
     "Description": "IA Writer"
   }
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.G))",
+    "display": "GOOGLE_CALANDER",
+    "keybinding": "Control + Shift + G",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Google Calendar"
+  }
+  
 ]
 
 
