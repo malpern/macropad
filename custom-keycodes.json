@@ -143,7 +143,42 @@
     "subNumber": 0,
     "Description": "Google Calendar"
   }
-  
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.M))",
+    "display": "GOOGLE_MEET",
+    "keybinding": "Control + Shift + M",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Google Meet"
+  }
+  {
+    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.P)))",
+    "display": "PREFERENCES",
+    "keybinding": "Control + Option + Command + P",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "System Preferences"
+  }
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.L))",
+    "display": "SLACK",
+    "keybinding": "Control + Shift + L",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Slack"
+  }
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.D))",
+    "display": "DISCORD",
+    "keybinding": "Control + Shift + D",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Discord"
+  }
 ]
 
 

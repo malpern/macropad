@@ -76,9 +76,9 @@ keyboard.keymap = [
         ck['CHATGPT'],
         # Row 2
         ck['CURSOR'],
-        ck['DOWNLOADS'],
-        ck['MESSAGES'],
-        ck['CHATGPT'],
+        KC.TD(ck['DOWNLOADS'], ck['PREFERENCES']),
+        KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
+        KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
         ck['FIGMA'],
         ck['TECHMEME'],
