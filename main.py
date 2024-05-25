@@ -13,9 +13,6 @@ from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
 
-tapdance.tap_time = 750
-keyboard.debug_enabled = True
-
 # Load custom keycodes into a dictionary
 ck = {}
 with open('custom-keycodes.json', 'r') as f:
@@ -28,6 +25,10 @@ keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
 tapdance = TapDance()
+
+
+tapdance.tap_time = 750
+keyboard.debug_enabled = True
 
 
 #Extensions
