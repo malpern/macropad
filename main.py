@@ -62,18 +62,13 @@ _______ = KC.TRNS
 xxxxxxx = KC.NO
 
 def flash_red():
-    # Save the current color
+    rgb.set_hsv_fill(0, 255, 255)  # Red color in HSV
+
+def reset_color():
+    # Revert to the previous color
     current_hue = rgb.hue
     current_sat = rgb.sat
     current_val = rgb.val
-
-    # Set LEDs to red
-    rgb.set_hsv_fill(0, 255, 255)  # Red color in HSV
-
-    # Wait for a brief moment
-    time.sleep(0.5)  # 0.5 seconds
-
-    # Revert to the previous color
     rgb.set_hsv_fill(current_hue, current_sat, current_val)
 
 # Define a flag to track key press state
@@ -84,10 +79,15 @@ def before_matrix_scan():
     if keyboard.keys_pressed and not key_pressed:
         key_pressed = True
         flash_red()
-    elif not keyboard.keys_pressed:
+
+def after_matrix_scan():
+    global key_pressed
+    if not keyboard.keys_pressed and key_pressed:
         key_pressed = False
+        reset_color()
 
 keyboard.before_matrix_scan = before_matrix_scan
+keyboard.after_matrix_scan = after_matrix_scan
 
 # Define keymap
 keyboard.keymap = [
