@@ -108,7 +108,7 @@ keyboard.keymap = [
     # Layer 3
         # MIDI
     [
-        KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       MIDI_OUT,
+        KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       KC.NO,
         KC.MIDI(67),    KC.MIDI(66),      KC.MIDI(65),       KC.MIDI(64),
         KC.MIDI(60),    KC.MIDI(61),      KC.MIDI(62),       KC.MIDI(63),
     ],
