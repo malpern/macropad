@@ -12,8 +12,9 @@ from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
-from midi import Midi
 
+tapdance.tap_time = 750
+keyboard.debug_enabled = True
 
 # Load custom keycodes into a dictionary
 ck = {}
@@ -26,9 +27,8 @@ with open('custom-keycodes.json', 'r') as f:
 keyboard = KMKKeyboard()
 modtap = ModTap()
 layers_ext = Layers()
-keyboard.modules.append(layers_ext)
-keyboard.modules.append(modtap)
-keyboard.debug_enabled = True
+tapdance = TapDance()
+
 
 #Extensions
 rgb = RGB(
@@ -36,8 +36,6 @@ rgb = RGB(
     num_pixels=keyboard.rgb_num_pixel, 
     hue_default=microcontroller.nvm[0]
 )
-midi_ext = Midi()
-
 
 def on_move_do(state):
     if state is not None and state['direction'] == -1:
@@ -57,7 +55,9 @@ keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
 keyboard.extensions.append(midi_ext)
-keyboard.modules = [layers_ext, modtap]
+keyboard.modules.append(layers_ext)
+keyboard.modules.append(modtap)
+keyboard.modules.append(tapdance)
 
 _______ = KC.TRNS
 xxxxxxx = KC.NO
