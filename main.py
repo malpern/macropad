@@ -14,7 +14,7 @@ from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
 
-# Load custom keycodes into a dictionaray
+# Load custom keycodes into a dictionaray.
 ck = {}
 with open('custom-keycodes.json', 'r') as f:
     custom_keycodes_list = json.load(f)
