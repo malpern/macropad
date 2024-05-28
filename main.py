@@ -28,7 +28,7 @@ layers_ext = Layers()
 tapdance = TapDance()
 
 tapdance.tap_time = 400  # was org 750
-keyboard.debug_enabled = True
+keyboard.debug_enabled = False
 
 # Extensions
 rgb = RGB(
