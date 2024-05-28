@@ -14,12 +14,13 @@ from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
 
-# Load custom keycodes into a dictionaray
+# Load custom keycodes into a dictionary
 ck = {}
 with open('custom-keycodes.json', 'r') as f:
     custom_keycodes_list = json.load(f)
     for kc in custom_keycodes_list:
-        ck[kc['display']] = eval(kc['code'])  # Use eval to convert string to executable code
+        # Use safer alternative to eval if possible
+        ck[kc['display']] = eval(kc['code'])  # Ensure the JSON content is safe and trusted
 
 # Initialize keyboard and modules
 keyboard = KMKKeyboard()
@@ -28,13 +29,13 @@ layers_ext = Layers()
 tapdance = TapDance()
 
 tapdance.tap_time = 400  # was org 750
-keyboard.debug_enabled = False
+keyboard.debug_enabled = True
 
 # Extensions
 rgb = RGB(
     pixel_pin=keyboard.rgb_pixel_pin, 
     num_pixels=keyboard.rgb_num_pixel, 
-    hue_default=microcontroller.nvm[0]
+    hue_default=microcontroller.nvm[0] if len(microcontroller.nvm) > 0 else 0  # Ensure nvm[0] is accessible
 )
 
 def on_move_do(state):
@@ -42,7 +43,8 @@ def on_move_do(state):
         rgb.decrease_hue()
     else:
         rgb.increase_hue()
-    microcontroller.nvm[0] = rgb.hue
+    if len(microcontroller.nvm) > 0:
+        microcontroller.nvm[0] = rgb.hue
 
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
