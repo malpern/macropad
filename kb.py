@@ -25,8 +25,8 @@ class KMKKeyboard(_KMKKeyboard):
                 pin_b=board.A1,
             ),
             RotaryioEncoder(
-                pin_a=board.B2,  # Example pin for the second encoder
-                pin_b=board.B1,  # Example pin for the second encoder
+                pin_a=board.SCK,  # Pin for the second encoder
+                pin_b=board.MISO,  # Pin for the second encoder
             )
         ]
 
