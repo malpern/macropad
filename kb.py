@@ -23,10 +23,6 @@ class KMKKeyboard(_KMKKeyboard):
             RotaryioEncoder(
                 pin_a=board.A2,
                 pin_b=board.A1,
-            ),
-            RotaryioEncoder(
-                pin_a=board.SCK,  # Pin for the second encoder
-                pin_b=board.MISO,  # Pin for the second encoder
             )
         ]
 
@@ -37,8 +33,3 @@ class KMKKeyboard(_KMKKeyboard):
     rgb_num_pixel = 4
     rgb_encoder_a = board.SCK
     rgb_encoder_b = board.MISO
-    # Uncomment the following lines if you want to use the RGB encoder in the future
-    # rgb_encoder = RGBEncoder(
-    #     pin_a=rgb_encoder_a,
-    #     pin_b=rgb_encoder_b,
-    # )
