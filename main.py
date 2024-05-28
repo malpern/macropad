@@ -61,34 +61,6 @@ keyboard.modules.append(tapdance)
 _______ = KC.TRNS
 xxxxxxx = KC.NO
 
-def button_press_feedback():
-    rgb.set_hsv_fill(85, 255, 50)  # Dark green color in HSV (hue=85, saturation=255, value=50)
-
-def reset_color():
-    # Revert to the previous color
-    current_hue = rgb.hue
-    current_sat = rgb.sat
-    current_val = rgb.val
-    rgb.set_hsv_fill(current_hue, current_sat, current_val)
-
-# Define a flag to track key press state
-key_pressed = False
-
-def before_matrix_scan():
-    global key_pressed
-    if keyboard.keys_pressed and not key_pressed:
-        key_pressed = True
-        button_press_feedback()
-
-def after_matrix_scan():
-    global key_pressed
-    if not keyboard.keys_pressed and key_pressed:
-        key_pressed = False
-        reset_color()
-
-keyboard.before_matrix_scan = before_matrix_scan
-keyboard.after_matrix_scan = after_matrix_scan
-
 # Define keymap
 keyboard.keymap = [
     # Layer 0
