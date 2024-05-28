@@ -40,17 +40,17 @@ rgb = RGB(
 def on_move_do(state):
     if state is not None and state['direction'] == -1:
         rgb.decrease_hue()
-        keyboard.tap_key(KC.J)
+        keyboard.tap_key(KC.LCMD(KC.LCTL(KC.J)))
     else:
         rgb.increase_hue()
-        keyboard.tap_key(KC.L)
+        keyboard.tap_key(KC.LCMD(KC.LCTL(KC.L)))
     microcontroller.nvm[0] = rgb.hue
 
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
-encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, [KC.RGB_TOG, KC.K]),),]  # Pressing the encoder button will toggle the color AND type K
+encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, [KC.RGB_TOG, KC.LCMD(KC.LCTL(KC.K))]),),]  # Pressing the encoder button will toggle the color AND type K
 
 # Append extensions and modules
 keyboard.extensions.append(MediaKeys())
