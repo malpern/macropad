@@ -186,16 +186,15 @@ class I2CEncoder(BaseEncoder):
         # Rotation events
         new_state = self.encoder.position
         if new_state != self._state:
-            # it moves !
+            print(f"Encoder state changed: {new_state}")
             self._movement += 1
-            # false / false and true / true are common half steps
-            # looking on the step just before helps determining
-            # the direction
             if self.encoder.position > self._state:
                 self._direction = 1
             else:
                 self._direction = -1
             self._state = new_state
+            print(f"Encoder moved: {self._direction}")
+            print(f"Encoder state: {self.get_state()}")
             self.on_move_do(self.get_state())
 
         # Velocity
