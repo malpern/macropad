@@ -1,5 +1,7 @@
 # See docs/encoder.md for how to use
 
+print("Encoder module loaded")
+
 import busio
 import digitalio
 from supervisor import ticks_ms
@@ -182,8 +184,6 @@ class I2CEncoder(BaseEncoder):
         self._state = self.encoder.position
 
     def update_state(self):
-
-        # Rotation events
         new_state = self.encoder.position
         if new_state != self._state:
             print(f"Encoder state changed: {new_state}")
