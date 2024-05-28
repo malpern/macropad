@@ -50,6 +50,7 @@ def on_move_do(state):
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
+encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, [KC.RGB_TOG, KC.K]),),]  # Pressing the encoder button will toggle RGB and type K
 
 # Append extensions and modules
 keyboard.extensions.append(MediaKeys())
@@ -67,7 +68,7 @@ keyboard.keymap = [
     # Layer 0
     [
         # Encoder press buttons
-        KC.AUDIO_MUTE, [KC.RGB_TOG, KC.K],
+        KC.AUDIO_MUTE, KC.RGB_TOG,
         # Row 1
         ck['ARCH'],
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS'],),
@@ -89,7 +90,7 @@ keyboard.keymap = [
     # Layer 1
     [
         # Encoder press buttons
-        KC.AUDIO_MUTE, [KC.RGB_TOG, KC.K],
+        KC.AUDIO_MUTE, KC.RGB_TOG,
         # Row 1
         KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK,
         # Row 2
