@@ -40,8 +40,10 @@ rgb = RGB(
 def on_move_do(state):
     if state is not None and state['direction'] == -1:
         rgb.decrease_hue()
+        keyboard.tap_key(KC.J)
     else:
         rgb.increase_hue()
+        keyboard.tap_key(KC.L)
     microcontroller.nvm[0] = rgb.hue
 
 # Initialize encoder handler
