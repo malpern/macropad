@@ -276,6 +276,7 @@ class EncoderHandler(Module):
             else:
                 key_index = 1
             key = self.map[layer_id][encoder_id][key_index]
+            print(f"Encoder {encoder_id} moved: {state['direction']}, key: {key}")
             keyboard.tap_key(key)
 
     def on_button_do(self, keyboard, encoder_id, state):
