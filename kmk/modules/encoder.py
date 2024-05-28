@@ -289,6 +289,7 @@ class EncoderHandler(Module):
         Return value will be injected as an extra matrix update
         '''
         for encoder in self.encoders:
+            print("Calling update_state for encoder")
             encoder.update_state()
 
         return keyboard
