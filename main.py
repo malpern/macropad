@@ -39,12 +39,14 @@ rgb = RGB(
 )
 
 def on_move_do(state):
-    if state is not None and state['direction'] == -1:
-        rgb.decrease_hue()
-    else:
-        rgb.increase_hue()
-    if len(microcontroller.nvm) > 0:
-        microcontroller.nvm[0] = rgb.hue
+    if state is not None:
+        print(f"Encoder moved: {state['direction']}")
+        if state['direction'] == -1:
+            rgb.decrease_hue()
+        else:
+            rgb.increase_hue()
+        if len(microcontroller.nvm) > 0:
+            microcontroller.nvm[0] = rgb.hue
 
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
