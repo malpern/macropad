@@ -80,7 +80,7 @@ xxxxxxx = KC.NO
 
 # Define keymap
 keyboard.keymap = [
-    # Layer 0
+    # Layer 0.
     [
         # Encoder press buttons
         xxxxxxx, xxxxxxx,
