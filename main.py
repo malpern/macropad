@@ -19,7 +19,7 @@ try:
         for kc in custom_keycodes_list:
             # Use a safer alternative to eval if possible
             ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
-except (IOError, json.JSONDecodeError) as e:
+except (OSError, json.JSONDecodeError) as e:
     print(f"Error loading custom keycodes: {e}. Using default keycodes.")
 
 # Initialize keyboard and modules
