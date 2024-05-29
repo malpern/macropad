@@ -18,9 +18,9 @@ try:
         custom_keycodes_list = json.load(f)
         for kc in custom_keycodes_list:
             # Use a safer alternative to eval if possible
-            ck[kc['display']] = eval(kc['code'])  # Be cautious with eval
+            ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
 except (FileNotFoundError, json.JSONDecodeError) as e:
-    print(f"Error loading custom keycodes: {e}")
+    print(f"Error loading custom keycodes: {e}. Using default keycodes.")
 
 # Initialize keyboard and modules
 keyboard = KMKKeyboard()
@@ -35,11 +35,12 @@ keyboard.debug_enabled = False
 rgb = RGB(
     pixel_pin=keyboard.rgb_pixel_pin, 
     num_pixels=keyboard.rgb_num_pixel, 
-    hue_default=microcontroller.nvm[0]
+    hue_default=microcontroller.nvm[0] if len(microcontroller.nvm) > 0 else 0
 )
 
 def on_move_do(state):
-    print(f"Encoder moved: {state}")  # Debug statement
+    if keyboard.debug_enabled:
+        print(f"Encoder moved: {state}")  # Debug statement
     if state is not None and state['direction'] == -1:
         rgb.decrease_hue()
         keyboard.tap_key(KC.LCMD(KC.LCTL(KC.J)))
@@ -56,7 +57,7 @@ def rgb_encoder_button_press():
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
-encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
+encoder_handler.on_move_do = lambda x, y, state: on_move_do(x, y, state)
 # Append extensions and modules before using their keycodes
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
