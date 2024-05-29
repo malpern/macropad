@@ -49,7 +49,7 @@ class BaseEncoder:
         new_state = (self.pin_a.get_value(), self.pin_b.get_value())
 
         if new_state != self._state:
-            # encoder moved
+            print(f"Encoder moved from {self._state} to {new_state}")  # Debug statement
             self._movement += 1
             # false / false and true / true are common half steps
             # looking on the step just before helps determining
@@ -93,7 +93,7 @@ class BaseEncoder:
         # Velocity
         self.velocity_event()
 
-        # Button event
+        # Button events
         self.button_event()
 
     def velocity_event(self):
