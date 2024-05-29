@@ -43,9 +43,10 @@ def on_move_do(state):
         keyboard.tap_key(KC.LCMD(KC.LCTL(KC.L)))
     microcontroller.nvm[0] = rgb.hue
 
-def encoder_button_press():
+def rgb_encoder_button_press():
     keyboard.tap_key(KC.RGB_TOG)
     keyboard.tap_key(KC.K)
+
 
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
@@ -53,7 +54,10 @@ print("keyboard.rgb_encoder_a: ", keyboard.rgb_encoder_a)
 print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
-encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, encoder_button_press,))]  # Pressing the encoder button will toggle RGB and press "K"
+encoder_handler.map = [
+    ((KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP, KC.AUDIO_MUTE,),)  # Encoder 1: Volume control
+    ((KC.RGB_HUD, KC.RGB_HUI, rgb_encoder_button_press,),)  # Encoder 2: RGB control
+]  # Pressing the encoder button will toggle RGB and press "K"
 
 # Append extensions and modules
 keyboard.extensions.append(MediaKeys())
@@ -71,10 +75,10 @@ keyboard.keymap = [
     # Layer 0
     [
         # Encoder press buttons
-        KC.AUDIO_MUTE, xxxxxxx,
+        xxxxxxx, xxxxxxx,
         # Row 1
         KC.TD(ck['ARCH']), KC.TD(ck['GMAIL']),
-        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS'],),
+        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
@@ -87,21 +91,17 @@ keyboard.keymap = [
         ck['TECHMEME'],
         KC.TD(ck['TWITTER'], ck['REDDIT']),
         ck['YOUTUBE'],
-        # Encoder turn options
-        KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP,
     ],
     # Layer 1
     [
         # Encoder press buttons
-        KC.AUDIO_MUTE, xxxxxxx,
+        xxxxxxx, xxxxxxx,
         # Row 1
         KC.KP_7, KC.KP_8, KC.KP_9, KC.KP_ASTERISK,
         # Row 2
         KC.KP_4, KC.KP_5, KC.KP_6, KC.KP_MINUS,
         # Row 3
         KC.KP_1, KC.KP_2, KC.KP_3, KC.KP_PLUS,
-        # Encoder turn options
-        KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
     ],
 
     # Layer 2
