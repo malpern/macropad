@@ -5,7 +5,6 @@ from kb import KMKKeyboard
 from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
-from kmk.hid import HIDModes
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
@@ -31,7 +30,7 @@ rgb = RGB(
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
-encoder_handler.on_move_do = lambda x, y, state: on_move_do(x, y, state)
+encoder_handler.on_move_do = on_move_do
 # Append extensions and modules before using their keycodes
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
@@ -49,7 +48,7 @@ with open('custom-keycodes.json', 'r') as f:
         ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
 
 
-def on_move_do(state):
+def on_move_do(x, y, state):
     if keyboard.debug_enabled:
         print(f"Encoder moved: {state}")  # Debug statement
     if state is not None and state['direction'] == -1:
