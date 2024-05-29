@@ -43,11 +43,15 @@ def on_move_do(state):
         keyboard.tap_key(KC.LCMD(KC.LCTL(KC.L)))
     microcontroller.nvm[0] = rgb.hue
 
+def encoder_button_press():
+    keyboard.tap_key(KC.RGB_TOG)
+    keyboard.tap_key(KC.K)
+
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
-encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG,))]  # Pressing the encoder button will toggle RGB
+encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, encoder_button_press,))]  # Pressing the encoder button will toggle RGB and press "K"
 
 # Append extensions and modules
 keyboard.extensions.append(MediaKeys())
