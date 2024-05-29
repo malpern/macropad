@@ -58,6 +58,14 @@ print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
 
+# Append extensions and modules before using their keycodes
+keyboard.extensions.append(MediaKeys())
+keyboard.extensions.append(rgb)
+keyboard.extensions.append(encoder_handler)
+keyboard.modules.append(layers_ext)
+keyboard.modules.append(modtap)
+keyboard.modules.append(tapdance)
+
 # Ensure the keycodes are valid
 try:
     encoder_handler.map = [
@@ -66,14 +74,6 @@ try:
     ]  # Pressing the encoder button will toggle RGB and press "K"
 except ValueError as e:
     print(f"Invalid key in encoder map: {e}")
-
-# Append extensions and modules
-keyboard.extensions.append(MediaKeys())
-keyboard.extensions.append(rgb)
-keyboard.extensions.append(encoder_handler)
-keyboard.modules.append(layers_ext)
-keyboard.modules.append(modtap)
-keyboard.modules.append(tapdance)
 
 _______ = KC.TRNS
 xxxxxxx = KC.NO
