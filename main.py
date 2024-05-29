@@ -72,6 +72,7 @@ try:
         ((KC.VOLD, KC.VOLU, KC.MUTE,),),  # Encoder 1: Volume control
         ((KC.RGB_HUD, KC.RGB_HUI, rgb_encoder_button_press,),)  # Encoder 2: RGB control
     ]  # Pressing the encoder button will toggle RGB and press "K"
+    print("Encoder map set successfully")  # Debug statement
 except ValueError as e:
     print(f"Invalid key in encoder map: {e}")
 
