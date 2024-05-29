@@ -29,7 +29,7 @@ layers_ext = Layers()
 tapdance = TapDance()
 
 tapdance.tap_time = 400  # was org 750
-keyboard.debug_enabled = True
+keyboard.debug_enabled = False
 
 # Extensions
 rgb = RGB(
@@ -56,7 +56,7 @@ encoder_handler = EncoderHandler()
 print("keyboard.rgb_encoder_a: ", keyboard.rgb_encoder_a)
 print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
-encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
+encoder_handler.on_move_do = lambda state: on_move_do(state)
 
 # Append extensions and modules before using their keycodes
 keyboard.extensions.append(MediaKeys())
