@@ -73,13 +73,13 @@ keyboard.keymap = [
         # Encoder press buttons
         KC.AUDIO_MUTE, xxxxxxx,
         # Row 1
-        ck['ARCH'],
+        KC.TD(ck['ARCH']), KC.TD(ck['GMAIL']),
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS'],),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
-        KC.TD(ck['CURSOR'], ck['APPLESCRIPT-EDITOR']),
-        KC.TD(ck['DOWNLOADS'], ck['PREFERENCES']),
+        KC.TD(ck['CURSOR'], ck['GITHUB'],ck['APPLESCRIPT-EDITOR']),
+        KC.TD(ck['DOWNLOADS'], ck['FLASH-GORDON-STORAGE'], ck['DOCUMENTS'], ck['PREFERENCES']),
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3

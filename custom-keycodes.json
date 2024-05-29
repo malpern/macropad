@@ -140,8 +140,8 @@
     "keybinding": "Control + Shift + G",
     "canHaveSub": false,
     "canHaveSubNumber": false,
+    "Description": "Google Celendar",
     "subNumber": 0,
-    "Description": "Google Calendar"
   },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.M))",
@@ -205,6 +205,42 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Reddit"
-  }
+  },
+  {
+    "code": "KC.LCMD(KC.LSFT(KC.LCTRL(KC.G)))",
+    "display": "GITHUB",
+    "keybinding": "Command + Shift + Control + G",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "GitHub"
+  },
+  {
+    "code": "KC.LCMD(KC.LCTRL(KC.LSFT(KC.D)))",
+    "display": "DOCUMENTS",
+    "keybinding": "Command + Control + Shift + D",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Documents"
+  },
+  {
+    "code": "KC.LCMD(KC.LCTRL(KC.LSFT(KC.F)))",
+    "display": "FLASH-GORDON-STORAGE",
+    "keybinding": "Command + Control + Shift + F",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Flash Gordon Storage"
+  },
+  {
+    "code": "KC.LCTRL(KC.LCMD(KC.G))",
+    "display": "GMAIL",
+    "keybinding": "Control + Command + G",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Gmail"
+  }   
 ]
 
