@@ -196,6 +196,15 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "AppleScript Editor"
+  },
+  {
+    "code": "KC.LCMD(KC.LSFT(KC.LCTRL(KC.R)))",
+    "display": "REDDIT",
+    "keybinding": "Command + Shift + Control + R",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Reddit"
   }
 ]
 

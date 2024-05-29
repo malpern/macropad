@@ -78,14 +78,14 @@ keyboard.keymap = [
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
-        ck['CURSOR'],
+        KC.TD(ck['CURSOR'], ck['APPLESCRIPT-EDITOR']),
         KC.TD(ck['DOWNLOADS'], ck['PREFERENCES']),
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
         ck['FIGMA'],
         ck['TECHMEME'],
-        ck['TWITTER'],
+        KC.TD(ck['TWITTER'], ck['REDDIT']),
         ck['YOUTUBE'],
         # Encoder turn options
         KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP,
