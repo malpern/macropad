@@ -39,6 +39,7 @@ rgb = RGB(
 )
 
 def on_move_do(state):
+    print(f"Encoder moved: {state}")  # Debug statement
     if state is not None and state['direction'] == -1:
         rgb.decrease_hue()
         keyboard.tap_key(KC.LCMD(KC.LCTL(KC.J)))
@@ -48,6 +49,7 @@ def on_move_do(state):
     microcontroller.nvm[0] = rgb.hue
 
 def rgb_encoder_button_press():
+    print("Encoder button pressed")  # Debug statement
     keyboard.tap_key(KC.RGB_TOG)
     keyboard.tap_key(KC.K)
 
