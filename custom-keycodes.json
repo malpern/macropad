@@ -115,7 +115,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Cursor"
-  }
+  },
   {
     "code": "KC.LALT(KC.LSFT(KC.D))",
     "display": "GOOGLE_DOCS",
@@ -124,7 +124,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Google Docs"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.I)))",
     "display": "IAWRITTER",
@@ -133,7 +133,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "IA Writer"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.G))",
     "display": "GOOGLE_CALANDER",
@@ -142,7 +142,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Google Calendar"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.M))",
     "display": "GOOGLE_MEET",
@@ -151,7 +151,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Google Meet"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.P)))",
     "display": "PREFERENCES",
@@ -160,7 +160,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "System Preferences"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.L))",
     "display": "SLACK",
@@ -169,7 +169,7 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Slack"
-  }
+  },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.D))",
     "display": "DISCORD",
@@ -178,7 +178,15 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Discord"
+  },
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.LCMD(KC.C)))",
+    "display": "CHATGPT-WEB",
+    "keybinding": "Control + Shift + Command + C",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "ChatGPT Website"
   }
 ]
-
 
