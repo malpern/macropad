@@ -19,12 +19,12 @@
   },
   {
     "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))",
-    "display": "CALANDER",
+    "display": "CALENDAR",
     "keybinding": "Control + Option + Command + C",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Calander"
+    "Description": "Calendar"
   },
   {
     "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.Z)))",
@@ -136,7 +136,7 @@
   },
   {
     "code": "KC.LCTRL(KC.LSFT(KC.G))",
-    "display": "GOOGLE_CALANDER",
+    "display": "GOOGLE_CALENDAR",
     "keybinding": "Control + Shift + G",
     "canHaveSub": false,
     "canHaveSubNumber": false,
@@ -186,7 +186,16 @@
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "ChatGPT Website"
+    "Description": "ChatGPT Web"
+  },
+  {
+    "code": "KC.LCTRL(KC.LSFT(KC.LCMD(KC.S)))",
+    "display": "APPLESCRIPT-EDITOR",
+    "keybinding": "Control + Shift + Command + S",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "AppleScript Editor"
   }
 ]
 

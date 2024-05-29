@@ -75,7 +75,7 @@ keyboard.keymap = [
         # Row 1
         ck['ARCH'],
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS'],),
-        KC.TD(ck['CALANDER'], ck['GOOGLE_CALANDER']),
+        KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
         ck['CURSOR'],
