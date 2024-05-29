@@ -1,3 +1,4 @@
+# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns.
 import json
 from kb import KMKKeyboard
 from kmk.modules.tapdance import TapDance
