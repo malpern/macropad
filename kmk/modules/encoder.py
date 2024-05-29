@@ -13,8 +13,9 @@ class BaseEncoder:
 
     VELOCITY_MODE = True
 
-    def __init__(self, is_inverted=False, divisor=4):
+    def __init__(self, keyboard, is_inverted=False, divisor=4):
 
+        self.keyboard = keyboard
         self.is_inverted = is_inverted
         self.divisor = divisor
 
@@ -102,7 +103,19 @@ class BaseEncoder:
             self._timestamp = new_timestamp
 
     def button_event(self):
-        raise NotImplementedError('subclasses must override button_event()!')
+        print("button_event called")  # Debug statement
+        if not self.switch.value and not self._button_held:
+            # Pressed
+            self._button_held = True
+            print("Button pressed detected")  # Debug statement
+            self.keyboard.rgb.set_hsv_fill(85, 255, 50)  # Dark green
+
+        if self.switch.value and self._button_held:
+            # Released
+            self._button_held = False
+            print("Button released: Waiting for 5 seconds before reverting color")
+            time.sleep(5)  # Wait for 5 seconds
+            self.keyboard.rgb.set_hsv_fill(self.keyboard.rgb.hue, self.keyboard.rgb.sat, self.keyboard.rgb.val)
 
     # return knob velocity as milliseconds between position changes (detents)
     # for backwards compatibility
@@ -112,8 +125,8 @@ class BaseEncoder:
 
 
 class GPIOEncoder(BaseEncoder):
-    def __init__(self, pin_a, pin_b, pin_button=None, is_inverted=False, divisor=None):
-        super().__init__(is_inverted)
+    def __init__(self, keyboard, pin_a, pin_b, pin_button=None, is_inverted=False, divisor=None):
+        super().__init__(keyboard, is_inverted)
 
         # Divisor can be 4 or 2 depending on whether the detent
         # on the encoder is defined by 2 or 4 pulses
@@ -156,7 +169,7 @@ class EncoderPin:
 
 
 class I2CEncoder(BaseEncoder):
-    def __init__(self, i2c, address, is_inverted=False):
+    def __init__(self, keyboard, i2c, address, is_inverted=False):
 
         try:
             from adafruit_seesaw import digitalio, neopixel, rotaryio, seesaw
@@ -164,7 +177,7 @@ class I2CEncoder(BaseEncoder):
             print('seesaw missing')
             return
 
-        super().__init__(is_inverted)
+        super().__init__(keyboard, is_inverted)
 
         self.seesaw = seesaw.Seesaw(i2c, address)
 
@@ -205,15 +218,19 @@ class I2CEncoder(BaseEncoder):
         self.button_event()
 
     def button_event(self):
+        print("button_event called")  # Debug statement
         if not self.switch.value and not self._button_held:
             # Pressed
             self._button_held = True
-            if self.on_button_do is not None:
-                self.on_button_do(self.get_state())
+            print("Button pressed detected")  # Debug statement
+            self.keyboard.rgb.set_hsv_fill(85, 255, 50)  # Dark green
 
         if self.switch.value and self._button_held:
             # Released
             self._button_held = False
+            print("Button released: Waiting for 5 seconds before reverting color")
+            time.sleep(1)  # Wait for 5 seconds
+            self.keyboard.rgb.set_hsv_fill(self.keyboard.rgb.hue, self.keyboard.rgb.sat, self.keyboard.rgb.val)
 
     def get_state(self):
         return {
@@ -226,7 +243,8 @@ class I2CEncoder(BaseEncoder):
 
 
 class EncoderHandler(Module):
-    def __init__(self):
+    def __init__(self, keyboard):
+        self.keyboard = keyboard
         self.encoders = []
         self.pins = None
         self.map = None
@@ -244,11 +262,11 @@ class EncoderHandler(Module):
                 try:
                     # Check for busio.I2C
                     if isinstance(pins[0], busio.I2C):
-                        new_encoder = I2CEncoder(*pins)
+                        new_encoder = I2CEncoder(self.keyboard, *pins)
 
                     # Else fall back to GPIO
                     else:
-                        new_encoder = GPIOEncoder(*pins)
+                        new_encoder = GPIOEncoder(self.keyboard, *pins)
                         # Set default divisor if unset
                         if new_encoder.divisor is None:
                             new_encoder.divisor = self.divisor
@@ -290,6 +308,7 @@ class EncoderHandler(Module):
         '''
         for encoder in self.encoders:
             encoder.update_state()
+            encoder.button_event()  # Ensure button event is checked during matrix scan
 
         return keyboard
 
