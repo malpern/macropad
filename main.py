@@ -13,10 +13,14 @@ from kmk.extensions.RGB import RGB
 
 # Load custom keycodes into a dictionary.
 ck = {}
-with open('custom-keycodes.json', 'r') as f:
-    custom_keycodes_list = json.load(f)
-    for kc in custom_keycodes_list:
-        ck[kc['display']] = eval(kc['code'])  # Use eval to convert string to executable code
+try:
+    with open('custom-keycodes.json', 'r') as f:
+        custom_keycodes_list = json.load(f)
+        for kc in custom_keycodes_list:
+            # Use a safer alternative to eval if possible
+            ck[kc['display']] = eval(kc['code'])  # Be cautious with eval
+except (FileNotFoundError, json.JSONDecodeError) as e:
+    print(f"Error loading custom keycodes: {e}")
 
 # Initialize keyboard and modules
 keyboard = KMKKeyboard()
@@ -47,17 +51,21 @@ def rgb_encoder_button_press():
     keyboard.tap_key(KC.RGB_TOG)
     keyboard.tap_key(KC.K)
 
-
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
 print("keyboard.rgb_encoder_a: ", keyboard.rgb_encoder_a)
 print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
-encoder_handler.map = [
-    ((KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP, KC.AUDIO_MUTE,),)  # Encoder 1: Volume control
-    ((KC.RGB_HUD, KC.RGB_HUI, rgb_encoder_button_press,),)  # Encoder 2: RGB control
-]  # Pressing the encoder button will toggle RGB and press "K"
+
+# Ensure the keycodes are valid
+try:
+    encoder_handler.map = [
+        ((KC.VOLD, KC.VOLU, KC.MUTE,),),  # Encoder 1: Volume control
+        ((KC.RGB_HUD, KC.RGB_HUI, rgb_encoder_button_press,),)  # Encoder 2: RGB control
+    ]  # Pressing the encoder button will toggle RGB and press "K"
+except ValueError as e:
+    print(f"Invalid key in encoder map: {e}")
 
 # Append extensions and modules
 keyboard.extensions.append(MediaKeys())
