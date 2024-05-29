@@ -13,14 +13,11 @@ from kmk.extensions.RGB import RGB
 
 # Load custom keycodes into a dictionary
 ck = {}
-try:
-    with open('custom-keycodes.json', 'r') as f:
-        custom_keycodes_list = json.load(f)
-        for kc in custom_keycodes_list:
-            # Use a safer alternative to eval if possible
-            ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
-except (OSError, json.JSONDecodeError) as e:
-    print(f"Error loading custom keycodes: {e}. Using default keycodes.")
+with open('custom-keycodes.json', 'r') as f:
+    custom_keycodes_list = json.load(f)
+    for kc in custom_keycodes_list:
+        # Use a safer alternative to eval if possible
+        ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
 
 # Initialize keyboard and modules
 keyboard = KMKKeyboard()
