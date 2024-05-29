@@ -1,6 +1,6 @@
 [
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.A)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.A)))])",
     "display": "ARCH",
     "keybinding": "Control + Option + Command + A",
     "canHaveSub": false,
@@ -9,7 +9,7 @@
     "Description": "Arch"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.E)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.E)))])",
     "display": "EVERNOTE",
     "keybinding": "Control + Option + Command + E",
     "canHaveSub": false,
@@ -18,7 +18,7 @@
     "Description": "Evernote"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.C)))])",
     "display": "CALENDAR",
     "keybinding": "Control + Option + Command + C",
     "canHaveSub": false,
@@ -27,7 +27,7 @@
     "Description": "Calendar"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.Z)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Z)))])",
     "display": "ZOOM",
     "keybinding": "Control + Option + Command + Z",
     "canHaveSub": false,
@@ -36,7 +36,7 @@
     "Description": "Zoom"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.D)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.D)))])",
     "display": "DOWNLOADS",
     "keybinding": "Control + Option + Command + D",
     "canHaveSub": false,
@@ -45,7 +45,7 @@
     "Description": "Downloads"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.M)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.M)))])",
     "display": "MESSAGES",
     "keybinding": "Control + Option + Command + M",
     "canHaveSub": false,
@@ -54,7 +54,7 @@
     "Description": "Messages"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.W)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.W)))])",
     "display": "WHATSAPP",
     "keybinding": "Control + Option + Command + W",
     "canHaveSub": false,
@@ -63,7 +63,7 @@
     "Description": "Whatsapp"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.F)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.F)))])",
     "display": "FIGMA",
     "keybinding": "Control + Option + Command + F",
     "canHaveSub": false,
@@ -72,7 +72,7 @@
     "Description": "Figma"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.G)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.G)))])",
     "display": "CHATGPT",
     "keybinding": "Control + Option + Command + G",
     "canHaveSub": false,
@@ -81,7 +81,7 @@
     "Description": "ChatGPT"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.T))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.T))])",
     "display": "TECHMEME",
     "keybinding": "Control + Shift + T",
     "canHaveSub": false,
@@ -90,7 +90,7 @@
     "Description": "Techmeme"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.T)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.T)))])",
     "display": "TWITTER",
     "keybinding": "Control + Option + Command + T",
     "canHaveSub": false,
@@ -99,7 +99,7 @@
     "Description": "Twitter"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.Y)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.Y)))])",
     "display": "YOUTUBE",
     "keybinding": "Control + Option + Command + Y",
     "canHaveSub": false,
@@ -108,7 +108,7 @@
     "Description": "YouTube"
   },
   {
-    "code": "KC.LCTRL(KC.LCMD(KC.C))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LCMD(KC.C))])",
     "display": "CURSOR",
     "keybinding": "Control + Command + C",
     "canHaveSub": false,
@@ -117,7 +117,7 @@
     "Description": "Cursor"
   },
   {
-    "code": "KC.LALT(KC.LSFT(KC.D))",
+    "code": "simple_key_sequence([KC.LALT(KC.LSFT(KC.D))])",
     "display": "GOOGLE_DOCS",
     "keybinding": "Option + Shift + D",
     "canHaveSub": false,
@@ -126,7 +126,7 @@
     "Description": "Google Docs"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.I)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.I)))])",
     "display": "IAWRITTER",
     "keybinding": "Control + Option + Command + I",
     "canHaveSub": false,
@@ -135,7 +135,7 @@
     "Description": "IA Writer"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.G))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.G))])",
     "display": "GOOGLE_CALENDAR",
     "keybinding": "Control + Shift + G",
     "canHaveSub": false,
@@ -144,7 +144,7 @@
     "subNumber": 0,
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.M))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.M))])",
     "display": "GOOGLE_MEET",
     "keybinding": "Control + Shift + M",
     "canHaveSub": false,
@@ -153,7 +153,7 @@
     "Description": "Google Meet"
   },
   {
-    "code": "KC.LCTRL(KC.LALT(KC.LCMD(KC.P)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.P)))])",
     "display": "PREFERENCES",
     "keybinding": "Control + Option + Command + P",
     "canHaveSub": false,
@@ -162,7 +162,7 @@
     "Description": "System Preferences"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.L))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.L))])",
     "display": "SLACK",
     "keybinding": "Control + Shift + L",
     "canHaveSub": false,
@@ -171,7 +171,7 @@
     "Description": "Slack"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.D))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.D))])",
     "display": "DISCORD",
     "keybinding": "Control + Shift + D",
     "canHaveSub": false,
@@ -180,7 +180,7 @@
     "Description": "Discord"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.LCMD(KC.C)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LCMD(KC.C)))])",
     "display": "CHATGPT-WEB",
     "keybinding": "Control + Shift + Command + C",
     "canHaveSub": false,
@@ -189,7 +189,7 @@
     "Description": "ChatGPT Web"
   },
   {
-    "code": "KC.LCTRL(KC.LSFT(KC.LCMD(KC.S)))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LCMD(KC.S)))])",
     "display": "APPLESCRIPT-EDITOR",
     "keybinding": "Control + Shift + Command + S",
     "canHaveSub": false,
@@ -198,7 +198,7 @@
     "Description": "AppleScript Editor"
   },
   {
-    "code": "KC.LCMD(KC.LSFT(KC.LCTRL(KC.R)))",
+    "code": "simple_key_sequence([KC.LCMD(KC.LSFT(KC.LCTRL(KC.R)))])",
     "display": "REDDIT",
     "keybinding": "Command + Shift + Control + R",
     "canHaveSub": false,
@@ -207,7 +207,7 @@
     "Description": "Reddit"
   },
   {
-    "code": "KC.LCMD(KC.LSFT(KC.LCTRL(KC.G)))",
+    "code": "simple_key_sequence([KC.LCMD(KC.LSFT(KC.LCTRL(KC.G)))])",
     "display": "GITHUB",
     "keybinding": "Command + Shift + Control + G",
     "canHaveSub": false,
@@ -216,7 +216,7 @@
     "Description": "GitHub"
   },
   {
-    "code": "KC.LCMD(KC.LCTRL(KC.LSFT(KC.D)))",
+    "code": "simple_key_sequence([KC.LCMD(KC.LCTRL(KC.LSFT(KC.D)))])",
     "display": "DOCUMENTS",
     "keybinding": "Command + Control + Shift + D",
     "canHaveSub": false,
@@ -225,7 +225,7 @@
     "Description": "Documents"
   },
   {
-    "code": "KC.LCMD(KC.LCTRL(KC.LSFT(KC.F)))",
+    "code": "simple_key_sequence([KC.LCMD(KC.LCTRL(KC.LSFT(KC.F)))])",
     "display": "FLASH-GORDON-STORAGE",
     "keybinding": "Command + Control + Shift + F",
     "canHaveSub": false,
@@ -234,7 +234,7 @@
     "Description": "Flash Gordon Storage"
   },
   {
-    "code": "KC.LCTRL(KC.LCMD(KC.G))",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LCMD(KC.G))])",
     "display": "GMAIL",
     "keybinding": "Control + Command + G",
     "canHaveSub": false,
