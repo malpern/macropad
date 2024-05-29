@@ -52,7 +52,7 @@ def rgb_encoder_button_press():
     keyboard.tap_key(KC.K)
 
 # Initialize encoder handler
-encoder_handler = EncoderHandler()
+encoder_handler = EncoderHandler(keyboard)
 print("keyboard.rgb_encoder_a: ", keyboard.rgb_encoder_a)
 print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
