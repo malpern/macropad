@@ -54,10 +54,9 @@ def rgb_encoder_button_press():
     keyboard.tap_key(KC.K)
 
 # Initialize encoder handler
-encoder_handler = EncoderHandler(keyboard)
+encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
-encoder_handler.on_move_do = lambda state: on_move_do(state)
-
+encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
 # Append extensions and modules before using their keycodes
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
