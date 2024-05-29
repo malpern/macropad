@@ -49,6 +49,8 @@ def encoder_button_press():
 
 # Initialize encoder handler
 encoder_handler = EncoderHandler()
+print("keyboard.rgb_encoder_a: ", keyboard.rgb_encoder_a)
+print("keyboard.rgb_encoder_b: ", keyboard.rgb_encoder_b)
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
 encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, encoder_button_press,))]  # Pressing the encoder button will toggle RGB and press "K"
