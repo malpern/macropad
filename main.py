@@ -11,13 +11,6 @@ from kmk.modules.encoder import EncoderHandler
 from kmk.modules.tapdance import TapDance
 from kmk.extensions.RGB import RGB
 
-# Load custom keycodes into a dictionary
-ck = {}
-with open('custom-keycodes.json', 'r') as f:
-    custom_keycodes_list = json.load(f)
-    for kc in custom_keycodes_list:
-        # Use a safer alternative to eval if possible
-        ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
 
 # Initialize keyboard and modules
 keyboard = KMKKeyboard()
@@ -35,6 +28,27 @@ rgb = RGB(
     hue_default=microcontroller.nvm[0] if len(microcontroller.nvm) > 0 else 0
 )
 
+# Initialize encoder handler
+encoder_handler = EncoderHandler()
+encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
+encoder_handler.on_move_do = lambda x, y, state: on_move_do(x, y, state)
+# Append extensions and modules before using their keycodes
+keyboard.extensions.append(MediaKeys())
+keyboard.extensions.append(rgb)
+keyboard.extensions.append(encoder_handler)
+keyboard.modules.append(layers_ext)
+keyboard.modules.append(modtap)
+keyboard.modules.append(tapdance)
+
+# Load custom keycodes into a dictionary
+ck = {}
+with open('custom-keycodes.json', 'r') as f:
+    custom_keycodes_list = json.load(f)
+    for kc in custom_keycodes_list:
+        # Use a safer alternative to eval if possible
+        ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
+
+
 def on_move_do(state):
     if keyboard.debug_enabled:
         print(f"Encoder moved: {state}")  # Debug statement
@@ -51,17 +65,6 @@ def rgb_encoder_button_press():
     keyboard.tap_key(KC.RGB_TOG)
     keyboard.tap_key(KC.K)
 
-# Initialize encoder handler
-encoder_handler = EncoderHandler()
-encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
-encoder_handler.on_move_do = lambda x, y, state: on_move_do(x, y, state)
-# Append extensions and modules before using their keycodes
-keyboard.extensions.append(MediaKeys())
-keyboard.extensions.append(rgb)
-keyboard.extensions.append(encoder_handler)
-keyboard.modules.append(layers_ext)
-keyboard.modules.append(modtap)
-keyboard.modules.append(tapdance)
 
 # Ensure the keycodes are valid
 try:
