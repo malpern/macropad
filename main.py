@@ -85,7 +85,7 @@ keyboard.keymap = [
         # Encoder press buttons
         xxxxxxx, xxxxxxx,
         # Row 1
-        KC.TD(ck['ARCH']), KC.TD(ck['GMAIL']),
+        KC.TD(ck['ARCH'], (ck['GMAIL'])),
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
