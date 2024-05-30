@@ -6,7 +6,7 @@ from kmk.keys import KC
 from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
 from kmk.hid import HIDModes
-from kmk.handlers.sequences import send_string
+from kmk.handlers.sequences import send_string, simple_key_sequence
 import supervisor
 keyboard = KMKKeyboard()
 modtap = ModTap()
@@ -46,22 +46,29 @@ with open('custom-keycodes.json', 'r') as f:
 def on_move_do(state):
     if state is not None and state['direction'] == -1:
         rgb.decrease_hue()
+        simple_key_sequence((KC.LCTRL, KC.LCMD, KC.J))()
     else:
         rgb.increase_hue()
+        simple_key_sequence((KC.LCTRL, KC.LCMD, KC.L))()
     microcontroller.nvm[0] = rgb.hue
 
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
 
-encoder_handler.map =   [ ((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),), ]
+
+
+encoder_handler.map = [((KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG),)]
 keyboard.extensions.append(MediaKeys())
 keyboard.extensions.append(rgb)
 keyboard.extensions.append(encoder_handler)
 
+
 # keymap
-keyboard.keymap = [ [
-    KC.AUDIO_MUTE,KC.RGB_TOG,
+keyboard.keymap = [
+    [
+        KC.AUDIO_MUTE,
+        simple_key_sequence([KC.RGB_TOG, KC.LCTRL, KC.LCMD, KC.K]),
 
         KC.TD(ck['ARCH'], ck['GMAIL']),
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
@@ -77,11 +84,11 @@ keyboard.keymap = [ [
         ck['TECHMEME'],
         KC.TD(ck['TWITTER'], ck['REDDIT']),
         ck['YOUTUBE'],
-
-    KC.AUDIO_VOL_DOWN,
-    KC.AUDIO_VOL_UP
+         
+        KC.AUDIO_VOL_DOWN,
+        KC.AUDIO_VOL_UP
     ]
-] 
+]
 # keymap
 
 if __name__ == '__main__': 
