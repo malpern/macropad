@@ -1,4 +1,4 @@
-# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns
+# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns.
 
 # Imports
 import json
@@ -18,8 +18,6 @@ from kmk.extensions.RGB import RGB
 keyboard = KMKKeyboard()
 layers_ext = Layers()
 tapdance = TapDance()
-
-keyboard.modules.extend([layers_ext, tapdance])
 
 # Enable debugging
 keyboard.debug_enabled = True
@@ -53,26 +51,39 @@ def on_move_do(state):
     microcontroller.nvm[0] = rgb.hue
 
 encoder_handler = EncoderHandler()
-encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
+encoder_handler.pins = (
+    (keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),
+    (keyboard.volume_encoder_a, keyboard.volume_encoder_b, None, False),
+)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
+
+# Extend keyboard with modules and extensions
+keyboard.modules.extend([layers_ext, tapdance])
+keyboard.extensions.extend([MediaKeys(), rgb, encoder_handler])
+
+# Debug print to verify MediaKeys initialization
+print("MediaKeys initialized:", MediaKeys in keyboard.extensions)
 
 encoder_handler.map = [
     (
         [
-            KC.RGB_HUD, KC.RGB_HUI, KC.RGB_TOG,
+            KC.RGB_HUD,
+            KC.RGB_HUI,
+            KC.RGB_TOG,
         ],
-    )
+    ),
+    (
+        [
+            KC.VOLD,
+            KC.VOLU,
+            KC.MUTE,
+        ],
+    ),
 ]
-
-keyboard.extensions.extend([MediaKeys(), rgb, encoder_handler])
 
 # Keymap
 keyboard.keymap = [
     [
-        # Encoder 1 & 2 button push
-        KC.AUDIO_MUTE,
-        simple_key_sequence([KC.RGB_TOG, KC.LCTRL, KC.LCMD, KC.K]),
-
         # Row 1
         KC.TD(ck['ARCH'], ck['GMAIL']),
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
@@ -84,16 +95,16 @@ keyboard.keymap = [
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
-        KC.TD(ck['FIGMA'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.J])),
-        KC.TD(ck['TECHMEME'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.L])),
+        ck['FIGMA'],
+        ck['TECHMEME'],
         KC.TD(ck['TWITTER'], ck['REDDIT']),
-        KC.TD(ck['YOUTUBE'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.K])),
-
-        # Encoder 1: Turn up/down 
-        KC.AUDIO_VOL_DOWN,
-        KC.AUDIO_VOL_UP,
+        ck['YOUTUBE'],
     ]
 ]
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
+    print("Starting keyboard...")
     keyboard.go(hid_type=HIDModes.USB)
+
+
+

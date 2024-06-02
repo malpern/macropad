@@ -3,8 +3,9 @@ import board
 from kmk.kmk_keyboard import KMKKeyboard as _KMKKeyboard
 from kmk.scanners import DiodeOrientation
 from kmk.scanners.keypad import MatrixScanner
-from kmk.scanners.encoder import RotaryioEncoder
+from kmk.modules.encoder import RotaryioEncoder
 from kmk.scanners.keypad import KeysScanner
+
 
 class KMKKeyboard(_KMKKeyboard):
     def __init__(self):
@@ -21,8 +22,12 @@ class KMKKeyboard(_KMKKeyboard):
                 columns_to_anodes=DiodeOrientation.COL2ROW,
             ),
             RotaryioEncoder(
-                pin_a=board.A2,
-                pin_b=board.A1,
+                pin_a=self.volume_encoder_a,
+                pin_b=self.volume_encoder_b,
+            ),
+            RotaryioEncoder(
+                pin_a=self.rgb_encoder_a,
+                pin_b=self.rgb_encoder_b,
             )
         ]
 
@@ -31,5 +36,7 @@ class KMKKeyboard(_KMKKeyboard):
     diode_orientation = DiodeOrientation.COL2ROW
     rgb_pixel_pin = board.D10
     rgb_num_pixel = 4
+    volume_encoder_a = board.A1
+    volume_encoder_b = board.A2
     rgb_encoder_a = board.SCK
     rgb_encoder_b = board.MISO
