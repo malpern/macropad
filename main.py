@@ -89,10 +89,10 @@ class KMKKeyboard(_KMKKeyboard):
     rgb_encoder_a = board.SCK
     rgb_encoder_b = board.MISO
     # Uncomment the following lines if you want to use the RGB encoder in the future
-    # rgb_encoder = RGBEncoder(
-    #     pin_a=rgb_encoder_a,
-    #     pin_b=rgb_encoder_b,
-    # )
+    rgb_encoder = RGBEncoder(
+         pin_a=rgb_encoder_a,
+         pin_b=rgb_encoder_b,
+     )
 encoder_handler = EncoderHandler()
 encoder_handler.pins = ((keyboard.rgb_encoder_a, keyboard.rgb_encoder_b, None, False),)
 encoder_handler.on_move_do = lambda x, y, state: on_move_do(state)
@@ -174,79 +174,6 @@ keyboard.keymap = [
         # Encoder turn options
         KC.AUDIO_VOL_DOWN, KC.AUDIO_VOL_UP
     ],
-
-    # Layer 2
-    [
-        # Encoder press buttons
-        xxxxxxx, xxxxxxx,
-        # Row 1
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 2
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 3
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Encoder turn options
-        xxxxxxx, xxxxxxx
-    ],
-    # Layer 3
-    #     # MIDI
-    # [
-    #     KC.MIDI(30),    KC.MIDI(69),      KC.MIDI(70),       xxxxxxx,
-    #     KC.MIDI(67),    KC.MIDI(66),      KC.MIDI(65),       KC.MIDI(64),
-    #     KC.MIDI(60),    KC.MIDI(61),      KC.MIDI(62),       KC.MIDI(63),
-    # ],
-    # Layer 4
-    [
-        # Encoder press buttons
-        xxxxxxx, xxxxxxx,
-        # Row 1
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 2
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 3
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Encoder turn options
-        xxxxxxx, xxxxxxx
-    ],
-    # Layer 5
-    [
-        # Encoder press buttons
-        xxxxxxx, xxxxxxx,
-        # Row 1
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 2
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 3
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Encoder turn options
-        xxxxxxx, xxxxxxx
-    ],
-    # Layer 6
-    [
-        # Encoder press buttons
-        xxxxxxx, xxxxxxx,
-        # Row 1
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 2
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 3
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Encoder turn options
-        xxxxxxx, xxxxxxx
-    ],
-    # Layer 7
-    [
-        # Encoder press buttons
-        xxxxxxx, xxxxxxx,
-        # Row 1
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 2
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Row 3
-        xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx,
-        # Encoder turn options
-        xxxxxxx, xxxxxxx
-    ]
 ]
 
 if __name__ == '__main__':
