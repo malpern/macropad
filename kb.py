@@ -3,7 +3,7 @@ import board
 from kmk.kmk_keyboard import KMKKeyboard as _KMKKeyboard
 from kmk.scanners import DiodeOrientation
 from kmk.scanners.keypad import MatrixScanner
-from kmk.modules.encoder import RotaryioEncoder
+from kmk.scanners.encoder import RotaryioEncoder
 from kmk.scanners.keypad import KeysScanner
 
 
