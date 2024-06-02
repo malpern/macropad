@@ -1,4 +1,4 @@
-# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns.
+# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns
 
 # Imports
 import json
