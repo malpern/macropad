@@ -39,4 +39,4 @@ class KMKKeyboard(_KMKKeyboard):
     volume_encoder_a = board.A1
     volume_encoder_b = board.A2
     rgb_encoder_a = board.SCK
-    rgb_encoder_b = board.MISO
+    rgb_encoder_b = board.MOSI
