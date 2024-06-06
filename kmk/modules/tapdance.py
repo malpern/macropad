@@ -3,7 +3,7 @@ from kmk.modules.holdtap import ActivationType, HoldTap, HoldTapKeyMeta
 
 
 class TapDanceKeyMeta:
-    def __init__(self, *keys, tap_time=None):
+    def __init__(self, *keys, tap_time=None, tap=None, hold=None):
         '''
         Any key in the tapdance sequence that is not already a holdtap
         key gets converted to a holdtap key with identical tap and hold
@@ -120,3 +120,6 @@ class TapDance(HoldTap):
             self.send_key_buffer(keyboard)
             del self.td_counts[state.tap_dance]
         super().on_tap_time_expired(key, keyboard, *args, **kwargs)
+
+
+
