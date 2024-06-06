@@ -267,3 +267,4 @@ class HoldTap(Module):
             self.ht_deactivate_hold(key, keyboard, *args, **kwargs)
         else:
             self.ht_deactivate_tap(key, keyboard, *args, **kwargs)
+

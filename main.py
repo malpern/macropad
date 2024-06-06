@@ -25,6 +25,18 @@ tapdance = TapDance()
 macros = Macros()
 holdtap = HoldTap()
 
+# Debugging statements
+print("Initializing TapDance module...")
+if tapdance:
+    print("TapDance module initialized successfully.")
+else:
+    print("Failed to initialize TapDance module.")
+
+print("Initializing HoldTap module...")
+if holdtap:
+    print("HoldTap module initialized successfully.")
+else:
+    print("Failed to initialize HoldTap module.")
 
 keyboard.modules.extend([layers_ext, tapdance, macros, holdtap])
 
