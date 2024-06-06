@@ -1,5 +1,3 @@
-# May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns
-
 # Imports
 import json
 import supervisor
@@ -118,3 +116,7 @@ keyboard.keymap = [
 
 if __name__ == '__main__': 
     keyboard.go(hid_type=HIDModes.USB)
+
+
+
+
