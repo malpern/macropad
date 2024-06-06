@@ -15,6 +15,7 @@ from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
 from kmk.modules.macros import Macros
+from kmk.modules.macros import MacroMeta
 
 
 # Initialization
