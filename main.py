@@ -7,6 +7,7 @@ import microcontroller
 from kb import KMKKeyboard
 from kmk.modules.tapdance import TapDance
 from kmk.keys import KC
+from kmk.modules.macros import Tap
 from kmk.modules.layers import Layers
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import simple_key_sequence
@@ -71,8 +72,7 @@ keyboard.keymap = [
     [
         # Encoder 1 & 2 button push
         KC.AUDIO_MUTE,
-        simple_key_sequence([KC.RGB_TOG, KC.LCTRL, KC.LCMD, KC.K]),
-
+        ck['YT-PAUSE'],
         # Row 1
         KC.TD(ck['ARCH'], ck['GMAIL']),
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
@@ -84,10 +84,10 @@ keyboard.keymap = [
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
-        KC.TD(ck['FIGMA'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.J])),
-        KC.TD(ck['TECHMEME'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.L])),
+        ck['FIGMA'],
+        ck['TECHMEME'],
         KC.TD(ck['TWITTER'], ck['REDDIT']),
-        KC.TD(ck['YOUTUBE'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.K])),
+        ck['YOUTUBE'],
 
         # Encoder 1: Turn up/down 
         KC.AUDIO_VOL_DOWN,
