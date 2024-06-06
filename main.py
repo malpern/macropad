@@ -7,7 +7,7 @@ import microcontroller
 from kb import KMKKeyboard
 from kmk.modules.tapdance import TapDance
 from kmk.keys import KC
-from kmk.modules.macros import Tap
+from kmk.modules.macros import Tap, MacroMeta
 from kmk.modules.layers import Layers
 from kmk.hid import HIDModes
 from kmk.handlers.sequences import simple_key_sequence
@@ -15,7 +15,6 @@ from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
 from kmk.modules.macros import Macros
-from kmk.modules.macros import MacroMeta
 
 
 # Initialization
