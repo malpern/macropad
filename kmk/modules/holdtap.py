@@ -54,7 +54,7 @@ class HoldTap(Module):
     def __init__(self):
         self.key_buffer = []
         self.key_states = {}
-        if KC.get('HT') == KC.NO:
+        if not KC.get('HT'):
             make_argumented_key(
                 validator=HoldTapKeyMeta,
                 names=('HT',),
@@ -267,4 +267,5 @@ class HoldTap(Module):
             self.ht_deactivate_hold(key, keyboard, *args, **kwargs)
         else:
             self.ht_deactivate_tap(key, keyboard, *args, **kwargs)
+
 
