@@ -10,8 +10,8 @@ class MacroMeta:
     def __init__(self, *macro, **kwargs):
         self.macro = macro
         self.meta = kwargs.get('meta', None)
-        self.on_press = kwargs.get('on_press', None)
-        self.on_release = kwargs.get('on_release', None)
+        self.on_press = kwargs.get('on_press', lambda *args, **kwargs: None)
+        self.on_release = kwargs.get('on_release', lambda *args, **kwargs: None)
 
 
 def Delay(delay):
