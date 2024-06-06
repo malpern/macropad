@@ -1,11 +1,11 @@
 [
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.A)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.A)
+)",
     "display": "ARCH",
     "keybinding": "Control + Option + Command + A",
     "canHaveSub": false,
@@ -14,12 +14,12 @@
     "Description": "Arch"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.E)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.E)
+)",
     "display": "EVERNOTE",
     "keybinding": "Control + Option + Command + E",
     "canHaveSub": false,
@@ -28,12 +28,12 @@
     "Description": "Evernote"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.C)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.C)
+)",
     "display": "CALENDAR",
     "keybinding": "Control + Option + Command + C",
     "canHaveSub": false,
@@ -42,12 +42,12 @@
     "Description": "Calendar"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.Z)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.Z)
+)",
     "display": "ZOOM",
     "keybinding": "Control + Option + Command + Z",
     "canHaveSub": false,
@@ -56,12 +56,12 @@
     "Description": "Zoom"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.D)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.D)
+)",
     "display": "DOWNLOADS",
     "keybinding": "Control + Option + Command + D",
     "canHaveSub": false,
@@ -70,12 +70,12 @@
     "Description": "Downloads"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.M)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.M)
+)",
     "display": "MESSAGES",
     "keybinding": "Control + Option + Command + M",
     "canHaveSub": false,
@@ -84,12 +84,12 @@
     "Description": "Messages"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.W)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.W)
+)",
     "display": "WHATSAPP",
     "keybinding": "Control + Option + Command + W",
     "canHaveSub": false,
@@ -98,12 +98,12 @@
     "Description": "Whatsapp"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.F)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.F)
+)",
     "display": "FIGMA",
     "keybinding": "Control + Option + Command + F",
     "canHaveSub": false,
@@ -112,12 +112,12 @@
     "Description": "Figma"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.G)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.G)
+)",
     "display": "CHATGPT",
     "keybinding": "Control + Option + Command + G",
     "canHaveSub": false,
@@ -126,11 +126,11 @@
     "Description": "ChatGPT"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.T)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.T)
+)",
     "display": "TECHMEME",
     "keybinding": "Control + Shift + T",
     "canHaveSub": false,
@@ -139,12 +139,12 @@
     "Description": "Techmeme"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.T)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.T)
+)",
     "display": "TWITTER",
     "keybinding": "Control + Option + Command + T",
     "canHaveSub": false,
@@ -153,12 +153,12 @@
     "Description": "Twitter"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.Y)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.Y)
+)",
     "display": "YOUTUBE",
     "keybinding": "Control + Option + Command + Y",
     "canHaveSub": false,
@@ -167,11 +167,11 @@
     "Description": "YouTube"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LCMD),
-      Tap(KC.C)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LCMD),
+  Tap(KC.C)
+)",
     "display": "CURSOR",
     "keybinding": "Control + Command + C",
     "canHaveSub": false,
@@ -180,11 +180,11 @@
     "Description": "Cursor"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LALT),
-      Tap(KC.LSFT),
-      Tap(KC.D)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LALT),
+  Tap(KC.LSFT),
+  Tap(KC.D)
+)",
     "display": "GOOGLE_DOCS",
     "keybinding": "Option + Shift + D",
     "canHaveSub": false,
@@ -193,12 +193,12 @@
     "Description": "Google Docs"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.I)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.I)
+)",
     "display": "IAWRITTER",
     "keybinding": "Control + Option + Command + I",
     "canHaveSub": false,
@@ -207,11 +207,11 @@
     "Description": "IA Writer"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.G)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.G)
+)",
     "display": "GOOGLE_CALENDAR",
     "keybinding": "Control + Shift + G",
     "canHaveSub": false,
@@ -220,11 +220,11 @@
     "subNumber": 0,
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.M)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.M)
+)",
     "display": "GOOGLE_MEET",
     "keybinding": "Control + Shift + M",
     "canHaveSub": false,
@@ -233,12 +233,12 @@
     "Description": "Google Meet"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LALT),
-      Tap(KC.LCMD),
-      Tap(KC.P)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LALT),
+  Tap(KC.LCMD),
+  Tap(KC.P)
+)",
     "display": "PREFERENCES",
     "keybinding": "Control + Option + Command + P",
     "canHaveSub": false,
@@ -247,11 +247,11 @@
     "Description": "System Preferences"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.L)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.L)
+)",
     "display": "SLACK",
     "keybinding": "Control + Shift + L",
     "canHaveSub": false,
@@ -260,11 +260,11 @@
     "Description": "Slack"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.D)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.D)
+)",
     "display": "DISCORD",
     "keybinding": "Control + Shift + D",
     "canHaveSub": false,
@@ -273,12 +273,12 @@
     "Description": "Discord"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.LCMD),
-      Tap(KC.C)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.LCMD),
+  Tap(KC.C)
+)",
     "display": "CHATGPT-WEB",
     "keybinding": "Control + Shift + Command + C",
     "canHaveSub": false,
@@ -287,12 +287,12 @@
     "Description": "ChatGPT Web"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.LCMD),
-      Tap(KC.S)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.LCMD),
+  Tap(KC.S)
+)",
     "display": "APPLESCRIPT-EDITOR",
     "keybinding": "Control + Shift + Command + S",
     "canHaveSub": false,
@@ -301,12 +301,12 @@
     "Description": "AppleScript Editor"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCMD),
-      Tap(KC.LSFT),
-      Tap(KC.LCTRL),
-      Tap(KC.R)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCMD),
+  Tap(KC.LSFT),
+  Tap(KC.LCTRL),
+  Tap(KC.R)
+)",
     "display": "REDDIT",
     "keybinding": "Command + Shift + Control + R",
     "canHaveSub": false,
@@ -315,12 +315,12 @@
     "Description": "Reddit"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCMD),
-      Tap(KC.LSFT),
-      Tap(KC.LCTRL),
-      Tap(KC.G)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCMD),
+  Tap(KC.LSFT),
+  Tap(KC.LCTRL),
+  Tap(KC.G)
+)",
     "display": "GITHUB",
     "keybinding": "Command + Shift + Control + G",
     "canHaveSub": false,
@@ -329,12 +329,12 @@
     "Description": "GitHub"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCMD),
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.D)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCMD),
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.D)
+)",
     "display": "DOCUMENTS",
     "keybinding": "Command + Control + Shift + D",
     "canHaveSub": false,
@@ -343,12 +343,12 @@
     "Description": "Documents"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCMD),
-      Tap(KC.LCTRL),
-      Tap(KC.LSFT),
-      Tap(KC.F)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCMD),
+  Tap(KC.LCTRL),
+  Tap(KC.LSFT),
+  Tap(KC.F)
+)",
     "display": "FLASH-GORDON-STORAGE",
     "keybinding": "Command + Control + Shift + F",
     "canHaveSub": false,
@@ -357,11 +357,11 @@
     "Description": "Flash Gordon Storage"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LCMD),
-      Tap(KC.G)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LCMD),
+  Tap(KC.G)
+)",
     "display": "GMAIL",
     "keybinding": "Control + Command + G",
     "canHaveSub": false,
@@ -370,11 +370,11 @@
     "Description": "Gmail"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LCMD),
-      Tap(KC.J)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LCMD),
+  Tap(KC.J)
+)",
     "display": "YT-REWIND",
     "keybinding": "Control + Command + J",
     "canHaveSub": false,
@@ -383,11 +383,11 @@
     "Description": "Rewind YouTube"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LCMD),
-      Tap(KC.L)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LCMD),
+  Tap(KC.L)
+)",
     "display": "YT-FAST-FORWARD",
     "keybinding": "Control + Command + L",
     "canHaveSub": false,
@@ -396,11 +396,11 @@
     "Description": "Fast Forward YouTube"
   },
   {
-    "code": "KC.MACRO(
-      Tap(KC.LCTRL),
-      Tap(KC.LCMD),
-      Tap(KC.K)
-    )",
+    "code": "MacroMeta(
+  Tap(KC.LCTRL),
+  Tap(KC.LCMD),
+  Tap(KC.K)
+)",
     "display": "YT-PAUSE",
     "keybinding": "Control + Command + K",
     "canHaveSub": false,
@@ -409,4 +409,3 @@
     "Description": "Pause YouTube"
   }   
 ]
-

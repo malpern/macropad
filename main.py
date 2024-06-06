@@ -46,6 +46,9 @@ with open('custom-keycodes.json', 'r') as f:
             key_sequence = eval(kc['code'].replace('simple_key_sequence', ''))
             # Apply the simple_key_sequence function
             ck[kc['display']] = simple_key_sequence(key_sequence)
+        elif 'MacroMeta' in kc['code']:
+            # Evaluate the MacroMeta code
+            ck[kc['display']] = eval(kc['code'])
         else:
             ck[kc['display']] = getattr(KC, kc['code'], None)  # Safer alternative to eval
 
