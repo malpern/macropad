@@ -9,6 +9,7 @@ debug = Debug(__name__)
 class MacroMeta:
     def __init__(self, *macro, **kwargs):
         self.macro = macro
+        self.meta = kwargs.get('meta', None)
 
 
 def Delay(delay):
