@@ -15,6 +15,7 @@ from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
 from kmk.modules.macros import Macros
+from kmk.modules.holdtap import HoldTap
 
 
 # Initialization
@@ -22,9 +23,10 @@ keyboard = KMKKeyboard()
 layers_ext = Layers()
 tapdance = TapDance()
 macros = Macros()
+holdtap = HoldTap()
 
 
-keyboard.modules.extend([layers_ext, tapdance, macros])
+keyboard.modules.extend([layers_ext, tapdance, macros, holdtap])
 
 # Enable debugging
 keyboard.debug_enabled = True
