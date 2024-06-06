@@ -14,13 +14,17 @@ from kmk.handlers.sequences import simple_key_sequence
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
+from kmk.modules.macros import Macros
+
 
 # Initialization
 keyboard = KMKKeyboard()
 layers_ext = Layers()
 tapdance = TapDance()
+macros = Macros()
 
-keyboard.modules.extend([layers_ext, tapdance])
+
+keyboard.modules.extend([layers_ext, tapdance, macros])
 
 # Enable debugging
 keyboard.debug_enabled = True
