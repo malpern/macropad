@@ -86,7 +86,7 @@ keyboard.keymap = [
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
 
         KC.TD(
-            KC.HT(ck['DOWNLOADS'], ck['CLOSE_WINDOW']),
+            KC.HT(ck['DOWNLOADS'], ck['CLOSE_WINDOW'], prefer_hold=False),
             ck['FLASH-GORDON-STORAGE'],
             ck['DOCUMENTS'],
             ck['PREFERENCES'],
@@ -94,7 +94,6 @@ keyboard.keymap = [
 
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
-
 
         # Row 3
         KC.TD(ck['FIGMA'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.J])),
