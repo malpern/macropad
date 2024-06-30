@@ -241,6 +241,14 @@
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Gmail"
-  }   
+  },
+  {
+    "code": "simple_key_sequence([KC.LCMD(KC.W)])",
+    "display": "CLOSE_WINDOW",
+    "keybinding": "Command + W",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Close Window"
+  }
 ]
-
