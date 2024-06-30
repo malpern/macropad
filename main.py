@@ -81,15 +81,21 @@ keyboard.keymap = [
         KC.TD(ck['CURSOR'], ck['GITHUB'], ck['APPLESCRIPT-EDITOR']),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
+
         # Row 2
+        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
+
         KC.TD(
-            ck['EVERNOTE'],
             KC.HT(ck['DOWNLOADS'], ck['CLOSE_WINDOW']),
-            ck['IAWRITTER'], 
-            ck['GOOGLE_DOCS'], 
+            ck['FLASH-GORDON-STORAGE'],
+            ck['DOCUMENTS'],
+            ck['PREFERENCES'],
         ),
+
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
+
+
         # Row 3
         KC.TD(ck['FIGMA'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.J])),
         KC.TD(ck['TECHMEME'], simple_key_sequence([KC.LCTRL, KC.LCMD, KC.L])),
