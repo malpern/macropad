@@ -80,7 +80,7 @@ keyboard.keymap = [
         KC.TD(ck['ARCH'], ck['GMAIL']),
         KC.TD(ck['CURSOR'], ck['GITHUB'], ck['APPLESCRIPT-EDITOR']),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
-        KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
+        KC.TD(ck['CHATGPT'], ck['CLAUDE'], ck['CHATGPT-WEB']),
 
         # Row 2
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),

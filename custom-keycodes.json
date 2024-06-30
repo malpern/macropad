@@ -180,6 +180,14 @@
     "Description": "Discord"
   },
   {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.C)))])",
+    "display": "CLAUDIA-WEB",
+    "keybinding": "Control + Shift + Option + Command + C",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Claudia"
+  },  {
     "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LCMD(KC.C)))])",
     "display": "CHATGPT-WEB",
     "keybinding": "Control + Shift + Command + C",
