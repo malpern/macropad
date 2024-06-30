@@ -117,13 +117,13 @@
     "Description": "Cursor"
   },
   {
-    "code": "simple_key_sequence([KC.LALT(KC.LSFT(KC.D))])",
-    "display": "GOOGLE_DOCS",
-    "keybinding": "Option + Shift + D",
+    "code": "simple_key_sequence([KC.LALT(KC.LSFT(KC.S))])",
+    "display": "GOOGLE_SLIDES",
+    "keybinding": "Option + Shift + S",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
-    "Description": "Google Docs"
+    "Description": "Google Slides"
   },
   {
     "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.I)))])",

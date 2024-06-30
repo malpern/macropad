@@ -83,7 +83,7 @@ keyboard.keymap = [
         KC.TD(ck['CHATGPT'], ck['CLAUDIA'], ck['CHATGPT-WEB']),
 
         # Row 2
-        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
+        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_SLIDES']),
 
         KC.TD(
             KC.HT(ck['DOWNLOADS'], ck['CLOSE_WINDOW'], prefer_hold=False),
