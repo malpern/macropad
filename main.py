@@ -1,4 +1,5 @@
 # May 29th. Fully functional encoders, push encoders, and buttons. Re-adding youtube turns
+# June 30. Added tap and hold on row 2, key 2 to close windows
 
 # Imports
 import json
