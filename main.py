@@ -14,13 +14,15 @@ from kmk.handlers.sequences import simple_key_sequence
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.RGB import RGB
+from kmk.modules.holdtap import HoldTap
 
 # Initialization
 keyboard = KMKKeyboard()
 layers_ext = Layers()
 tapdance = TapDance()
+holdtap = HoldTap()
 
-keyboard.modules.extend([layers_ext, tapdance])
+keyboard.modules.extend([layers_ext, tapdance, holdtap])
 
 # Enable debugging
 keyboard.debug_enabled = True
@@ -80,8 +82,12 @@ keyboard.keymap = [
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
-        KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
-        KC.TD(tapdance.tap_hold(ck['DOWNLOADS'], ck['CLOSE_WINDOW'], ck['FLASH-GORDON-STORAGE'], ck['DOCUMENTS'], ck['PREFERENCES'])),
+        KC.TD(
+            ck['EVERNOTE'],
+            KC.HT(ck['DOWNLOADS'], ck['CLOSE_WINDOW']),
+            ck['IAWRITTER'], 
+            ck['GOOGLE_DOCS'], 
+        ),
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
