@@ -80,7 +80,7 @@ keyboard.keymap = [
         KC.TD(ck['CHATGPT'], ck['CHATGPT-WEB']),
         # Row 2
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_DOCS']),
-        KC.TD(ck['DOWNLOADS'], ck['FLASH-GORDON-STORAGE'], ck['DOCUMENTS'], ck['PREFERENCES'], ck['CLOSE_WINDOW']),
+        KC.TD(tapdance.tap_hold(ck['DOWNLOADS'], ck['CLOSE_WINDOW'], ck['FLASH-GORDON-STORAGE'], ck['DOCUMENTS'], ck['PREFERENCES'])),
         KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
         # Row 3
