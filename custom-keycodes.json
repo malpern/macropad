@@ -181,7 +181,7 @@
   },
   {
     "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.C))))])",
-    "display": "CLAUDIA-WEB",
+    "display": "CLAUDIA",
     "keybinding": "Control + Shift + Option + Command + C",
     "canHaveSub": false,
     "canHaveSubNumber": false,
