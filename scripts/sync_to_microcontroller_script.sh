@@ -40,6 +40,7 @@ sync_files() {
         --exclude='watch_and_sync.sh' \
         --exclude='*.m4a' \
         --exclude='*.log' \
+        --exclude='*.mp3' \
         "$MAC_PATH/" "$MICROCONTROLLER_PATH/" | tee -a "$LOG_FILE"
         if [ $? -eq 0 ]; then
             log "Sync successful."
