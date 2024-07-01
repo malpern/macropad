@@ -54,15 +54,6 @@
     "Description": "Messages"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.W)))])",
-    "display": "WHATSAPP",
-    "keybinding": "Control + Option + Command + W",
-    "canHaveSub": false,
-    "canHaveSubNumber": false,
-    "subNumber": 0,
-    "Description": "Whatsapp"
-  },
-  {
     "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.F)))])",
     "display": "FIGMA",
     "keybinding": "Control + Option + Command + F",
@@ -140,8 +131,8 @@
     "keybinding": "Control + Shift + G",
     "canHaveSub": false,
     "canHaveSubNumber": false,
-    "Description": "Google Celendar",
     "subNumber": 0,
+    "Description": "Google Calendar"
   },
   {
     "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.M))])",
@@ -180,14 +171,6 @@
     "Description": "Discord"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.C))))])",
-    "display": "CLAUDIA",
-    "keybinding": "Control + Shift + Option + Command + C",
-    "canHaveSub": false,
-    "canHaveSubNumber": false,
-    "subNumber": 0,
-    "Description": "Claudia"
-  },  {
     "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LCMD(KC.C)))])",
     "display": "CHATGPT-WEB",
     "keybinding": "Control + Shift + Command + C",
@@ -251,12 +234,57 @@
     "Description": "Gmail"
   },
   {
-    "code": "simple_key_sequence([KC.LCMD(KC.W)])",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LCMD(KC.LSFT(KC.LALT(KC.Z))))])",
+    "display": "ZED",
+    "keybinding": "Control + Command + Shift + Option + Z",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Zed"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCMD(KC.LALT(KC.LCTRL(KC.LSFT(KC.W))))])",
     "display": "CLOSE_WINDOW",
-    "keybinding": "Command + W",
+    "keybinding": "Command + Option + Control + Shift + W",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Close Window"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LALT(KC.LCMD(KC.W)))])",
+    "display": "WHATSAPP",
+    "keybinding": "Control + Option + Command + W",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Whatsapp"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LCMD(KC.LSFT(KC.LALT(KC.V))))])",
+    "display": "VS_CODE",
+    "keybinding": "Control + Command + Shift + Option + V",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "VS Code"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.C))))])",
+    "display": "CLAUDIA",
+    "keybinding": "Control + Shift + Option + Command + C",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Claudia"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.H))))])",
+    "display": "HAZEL_MODE",
+    "keybinding": "Control + Shift + Option + Command + H",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Hazel Mode"
   }
 ]

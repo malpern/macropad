@@ -78,9 +78,18 @@ keyboard.keymap = [
 
         # Row 1
         KC.TD(ck['ARCH'], ck['GMAIL']),
-        KC.TD(ck['CURSOR'], ck['GITHUB'], ck['APPLESCRIPT-EDITOR']),
+        KC.TD(
+            KC.HT(ck['CURSOR'], ck['ZED'], prefer_hold=False),
+            ck['GITHUB'],
+            ck['APPLESCRIPT-EDITOR'],
+            ck['VS_CODE']
+        ),
         KC.TD(ck['CALENDAR'], ck['GOOGLE_CALENDAR']),
-        KC.TD(ck['CHATGPT'], ck['CLAUDIA'], ck['CHATGPT-WEB']),
+        KC.TD(
+            KC.HT(ck['CHATGPT'], ck['HAZEL_MODE'], prefer_hold=False),
+            ck['CLAUDIA'],
+            ck['CHATGPT-WEB']
+        ),
 
         # Row 2
         KC.TD(ck['EVERNOTE'], ck['IAWRITTER'], ck['GOOGLE_SLIDES']),
@@ -92,7 +101,7 @@ keyboard.keymap = [
             ck['PREFERENCES'],
         ),
 
-        KC.TD(ck['MESSAGES'], ck['DISCORD'], ck['SLACK']),
+        KC.TD(ck['MESSAGES'], ck['WHATSAPP'], ck['DISCORD'], ck['SLACK']),
         KC.TD(ck['ZOOM'], ck['GOOGLE_MEET']),
 
         # Row 3

@@ -38,6 +38,7 @@ sync_files() {
         --size-only \
         --exclude='.*' \
         --exclude='watch_and_sync.sh' \
+        --exclude='*.m4a' \
         --exclude='*.log' \
         "$MAC_PATH/" "$MICROCONTROLLER_PATH/" | tee -a "$LOG_FILE"
         if [ $? -eq 0 ]; then
