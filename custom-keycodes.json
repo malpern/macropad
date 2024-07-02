@@ -279,12 +279,66 @@
     "Description": "Claudia"
   },
   {
-    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.H))))])",
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N4))))])",
     "display": "HAZEL_MODE",
-    "keybinding": "Control + Shift + Option + Command + H",
+    "keybinding": "Control + Shift + Option + Command + 4",
     "canHaveSub": false,
     "canHaveSubNumber": false,
     "subNumber": 0,
     "Description": "Hazel Mode"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N9))))])",
+    "display": "GIMKIT",
+    "keybinding": "Control + Shift + Option + Command + 9",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Gimkit"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N0))))])",
+    "display": "TAYLOR",
+    "keybinding": "Control + Shift + Option + Command + 0",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Taylor"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N8))))])",
+    "display": "FART",
+    "keybinding": "Control + Shift + Option + Command + 8",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Fart Sound"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N7))))])",
+    "display": "EXIT-HAZEL",
+    "keybinding": "Control + Shift + Option + Command + 7",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Exit Hazel"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N6))))])",
+    "display": "MU-EDITOR",
+    "keybinding": "Control + Shift + Option + Command + 6",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Mu Editor"
+  },
+  {
+    "code": "simple_key_sequence([KC.LCTRL(KC.LSFT(KC.LALT(KC.LCMD(KC.N5))))])",
+    "display": "MONKEY",
+    "keybinding": "Control + Shift + Option + Command + 5",
+    "canHaveSub": false,
+    "canHaveSubNumber": false,
+    "subNumber": 0,
+    "Description": "Monkey Type"
   }
 ]
